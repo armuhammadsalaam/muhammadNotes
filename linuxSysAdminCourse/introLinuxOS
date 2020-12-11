@@ -1,0 +1,9 @@
+First Lesson;
+
+PATH (case-sensitive) is an environmental variable that controls the
+command line search path; contains a list of directories to navigate
+
+	which command	This command locates the PATH of a command
+			ex: 
+				which cat
+				which tac
