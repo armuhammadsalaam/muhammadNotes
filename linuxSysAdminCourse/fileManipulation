@@ -1,0 +1,24 @@
+Navigating and Manipulating Files
+
+'find' command:
+	find -name pattern	finds matching files and directories
+	find -iname pattern	search ignores casing
+	find -name -ls pattern	output ls for each found item
+	find -mtime days	search for files days old
+	find -size num		finds files of size num
+	find -newer file	finds files newer than  file passed in
+	find -name pattern -exec command {} \; execute command on search output
+						for all outputs.
+	find -name pattern -delete 	safer deletion than -exec command
+	locate pattern		faster search command; results not in real
+				time
+
+Removing Files -
+
+	rm file		remove file
+	rm -r dir	recursively remove directory and its contents
+	rm -f file	force removal with no confirmation prompt
+
+Copy Files -
+
+	cp source_file	destination_file ; copy src file to dst file

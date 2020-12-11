@@ -1,0 +1,41 @@
+Directory Perimissions -
+
+	r	allows reading permission
+	w	allows writing/modifying permission
+	x	allows access to contents and meta data for entries
+
+permission categories:
+	u	user
+	g	group
+	o	other
+	a	all
+** refer to documentation for more specific permission category info
+
+symbol		type
+	-	regular file
+	d	Directory
+	l	symbolic link
+	r	read-only
+	w	write/modifications permitted
+	x	executable program
+
+Changing Permissions -
+
+in Linux, the OS considers permissions as modes
+syntax:
+	chmod mode file
+	options:
+		-u -g -o -a
+		+ - = (add, remove, set permissions)
+		rwx (read, write, execute)
+	example command:
+			chmod g+w fileName
+				add writing permissions to group for file
+** refer to documentation for info about octal/numerical codes **
+
+	chgrp	change group ownership
+	umask [-S] [mode]	sets file creation mask to mode if given
+				-S symbolic notation
+				takes away permissions
+				** refer to docs **
+

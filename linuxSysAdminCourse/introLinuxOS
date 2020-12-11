@@ -6,4 +6,21 @@ command line search path; contains a list of directories to navigate
 	which command	This command locates the PATH of a command
 			ex: 
 				which cat
-				which tac
+				which tac --> concatenate and print files
+					      in reverse.
+						cat command concatenates all
+						files in a directory and
+						prints them to the console.
+	man -k search_term	search results from manual documentation
+	$PATH		controls search path
+	./command	execute command in current directory.
+	ls -l		long list output of current directory.
+	ls -l -a	include hidden files in list output
+	ls -F		reveal file types
+				/	directory
+				@	link
+				*	executable
+	ls -t		sort by time
+	ls -r		reverse order list output
+	ls -latr	-l -a -t -r multiple options in same ls command
+	
