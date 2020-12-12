@@ -1,0 +1,39 @@
+Wild Cards -
+	Wild cards use a character or string for pattern matching
+	globbing expands the wilc card pattern into a list of files/dir
+	cp | rm | ls  commands can be used with most wild card commands
+
+	*	wild card outputs all matches one or more characters
+	*.txt	outputs all matching .txt files
+	sample* outputs all files starting w sample filename
+	sample*.txt outputs files starting w sample ending in .txt
+
+	?	wild card outputs single character match
+	?.txt	outputs all files named w one character
+	x?	outputs	all files starting w x filename
+	arg???.txt outputs all files w 3 matching characters
+
+Wild Card Character classes - Create specific search patterns
+	
+	[]	character class that matches any of the characters in the
+		brackets
+		outputs any file containing any of the args passed in
+	[!]	outputs files NOT containing args passed in
+		looks to match first char of filename or directory
+	[!aeiou]*	outputs filenames that do NOT start with args passed
+			in
+
+Wild Card Ranges -
+
+	[a-g]*	outputs all filenames starting within args passed in
+		use a-b syntax to create a range
+	[3-6]*	outputs all filenames starting with any of args passed in
+
+Preset Character Classes -
+
+	[[:alpha:]]	alphabet no casing
+	[[:alnum:]]	outputs alphabet and numbers
+	[[:digit:]]	#s decimals
+	[[:lower:]]	lower alphacasing
+	[[:space:]]	
+
