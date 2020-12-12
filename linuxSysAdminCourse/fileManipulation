@@ -71,3 +71,21 @@ Cut Command -
 	cut -f N,N	display the Nth field
 
 Translator command -
+	
+	tr"arg1""arg2"	takes arg1 and replaces all instances with arg2
+	
+Tables -
+	column -t	creates tabular data
+
+Piping out to a pager -
+
+	more
+	less		** refer to man more and man less for functionality
+
+Transferring and Copying files over the Network -
+	
+	scp		secure copy; requires filename and path
+	sftp		ssh file transfer protocol; interactive
+	sftp host	start sftp session w/ host
+	scp source destination		copy source to destination
+	put file	puts file passed in onto remote server
