@@ -1,5 +1,7 @@
 Linux system administration course
+
 Processes and Job Control Notes
+
 Listing processes and information:
 	ps	Display process status
 		Options:
@@ -40,5 +42,6 @@ Killing Processes
 	kill [-sig] pid	Send a signal to a process.
 			Defaul signal:
 				-TERM
-	kill -l		Display a listt of signals
+	kill -l		Display a list of signals
 ** if -TERM or -15 does not kill the process, use -9
+
