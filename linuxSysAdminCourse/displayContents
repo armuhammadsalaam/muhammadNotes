@@ -1,9 +1,0 @@
-Display Contents of a File
-	cat file	Display contents; static command
-	more file	Browse through contents of a file
-	less file	More features than more command
-	head file	Outputs the top portion of a file; refer to man
-			command for more functionality (display certain
-			number of lines)
-	tail file	Outputs the bottom portion of a file (refer to man)
-** adding -f after command follows the file changes.

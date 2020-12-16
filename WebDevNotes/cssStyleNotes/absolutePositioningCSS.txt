@@ -1,4 +1,0 @@
-Absolute Positioning CSS Styling for Web pages
-
-Absolute positioning affects element relative to parent element, not its own static default setting. 
-
