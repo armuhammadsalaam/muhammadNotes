@@ -1,0 +1,48 @@
+The su Command -
+
+	su[username]	Change user ID or become superuser
+			not passing in username changes to root
+			current environment is passed into new
+			shell
+	options:
+	-		Used to provide an environment similar to
+			what the user would expect had the user
+			logged in directly. specifying a new 
+			environment resets environment variables
+	-c command	Specify a command to be executed.
+	
+	whoami		outputs current user
+
+Sudo - Super User Do
+
+	sudo 		Execute a command as another user, usually
+			the superuser
+Using sudo -
+
+	sudo -l		List available commands
+	sudo command	Run command as root user
+	sudo -u root command same as above			
+	sudo -u user command Run as user
+	sudo su		Switch to the superuser account
+	sudo su -	Switch to the superuser account with
+			root's env.
+	sudo su -username	Switch to the username account
+
+Using sudo -
+
+	sudo -$		Start a shell
+	sudo -u root -s	 Start a shell as user
+
+Changing the sudo Configuration
+	
+	visudo		Edit the /etc/sudoers file 
+			only superuser/root can execute
+Sudoers Format - 
+
+Sudoers file contains list of users and what commands those users
+can run
+
+	user host=(users)[NOPASSWD:]commands
+	
+	adminuser ALL=(ALL) NOPASSWD:ALL
+	jason linuxsvr=(root) /etc/init.d/oracle

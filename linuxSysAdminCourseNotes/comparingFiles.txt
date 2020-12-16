@@ -1,0 +1,40 @@
+Comparing the Contents of Files -
+
+	diff file1 file2	compare 2 files
+	sdiff file1 file2	side-by-side comparison
+	vimdiff file1 file2	highlight differences in vim text editor
+	options: ctrl w w	go to next window
+		:q		quit
+		:qa		quit all
+		:qa!		force quit all; no save
+
+Searching Files and Using Pipes -
+
+	grep			Display lines matching a pattern
+	grep pattern file	outputs pattern matching within source file
+	options: 
+		-i		ignores case
+		-c		count the number of occurrences in a file
+		-n		precede output with line numbers
+		-v		invert match; outputs lines that don't match
+
+file Command -
+
+	file fileName		outputs the file type
+	file sales.data		outputs file type for sales.data file
+
+Search for text in a binary file -
+
+	strings			otuputs printable strings
+				refer to man strings for more details
+
+Pipes -
+
+	|			Pipe symbol; chain 2 commands together
+	command stdout | command stdin	passes stdout from arg1 as stdin
+					for arg2
+					error msgs are not passed
+	cat file | grep pattern	Passes stdout of arg1 as stdin for arg2
+	similar command: grep pattern file
+
+
