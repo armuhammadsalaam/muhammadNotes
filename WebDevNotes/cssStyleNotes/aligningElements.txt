@@ -1,0 +1,45 @@
+Aligning elements;
+
+Center text within an element. In the body element, text-align affects all text in body.
+
+	text-align: value;
+
+To change the alignment of a list, place the list in a <div></div> and add text align propery:value; Use class attribute to change CSS styling for that div.
+
+/* Another option to center elements in the body is by manipulating the margins. When adding values to margins around an element,
+the input goes clock-wise around the margin ex: margin: top right bottom left ; where each argument is a value for the margin on 
+that particular side */
+
+
+To center the ul and also have the li elements centered in it as well, and make the width of the ul change dynamically, use display: inline-block; and wrap it in a centered div.
+
+
+See example below for CSS styling and div construction:
+
+<style type="text/css">
+    .wrapper {
+        text-align: center;
+    }
+    .wrapper ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        /* For IE, the outcast */
+        zoom:1;
+        *display: inline;
+    }
+    .wrapper li {
+        float: left;
+        padding: 2px 5px;
+        border: 1px solid black;
+    }
+</style>
+
+<div class="wrapper">
+    <ul>
+        <li>Three</li>
+        <li>Blind</li>
+        <li>Mice</li>
+    </ul>
+</div>
+
