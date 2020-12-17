@@ -1,0 +1,15 @@
+Use the cat command to output numerous files onto the console. use output  redirection to
+combine those files into a new file.
+
+example:
+	cat file1.txt file2.txt file3.txt > file4.txt
+
+above command will overwrite the destination file if it is not empty.
+
+Use cat then pipe and sort output to a file:
+
+	cat file1.txt file2.txt file3.txt | sort > file4.txt
+
+Append files to the end of an existing file:
+
+cat file5.txt >> file4.txt

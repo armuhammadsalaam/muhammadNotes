@@ -62,3 +62,7 @@ Be sure to keep styles.css sheet minimal at first to change one element at a tim
 by adding styles to the body. position: absolute; style will use body as parent element.
 use position: relative; in the parent element then add position: absolute; to the element
 that needs positioning around the page. 
+Absolute Positioning CSS Styling for Web pages
+
+Absolute positioning affects element relative to parent element, not its own static default setting. 
+
