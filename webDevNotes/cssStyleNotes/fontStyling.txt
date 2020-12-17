@@ -1,0 +1,34 @@
+CSS Fonts
+
+Refer to documentation for details regarding font family, boldness, and the style of a
+text.
+
+Sans-serif type fonts are the basic text style, "without serifs"; serifs are the old type
+set style of fond such as with Times New Roman Font.
+
+Serif type font is the old type set style with serifs at all extensions/ends of type set
+
+Add font-family: value; in the body of CSS style sheet to declare the font-family for the
+body of the webpage.
+
+Default font family is serif.
+
+default serif font is Times New Roman
+
+default sans-serif font is Arial
+
+ex:
+	body{
+		font family: verdana, sans-serif;
+	}
+
+declaring the font style in addition to the font family style adds the specific font you
+want for the website. 
+
+Some font types are not displayed correctly or the same across platforms. use "web safe
+fonts" to reduce likelihood of incorrect font type display; refer to documentation
+
+Use a stack of font fall backs (refer to CSS Font Stack) to avoid any particular browser
+not rendering a font type
+
+
