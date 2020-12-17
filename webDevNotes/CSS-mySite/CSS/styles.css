@@ -2,6 +2,7 @@ body{
     background-color: black;
     color: firebrick;
     margin: 0;
+    text-align: center;
 }
 
 /* use .class to style classes from a particular element */
@@ -9,7 +10,7 @@ body{
     /*refer to documentation for customizing margins around the different divs. Headers have their own
     margins that need unique adjustment if the div adjustments are not sufficient.*/
     background-color: darkolivegreen;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 h1{
@@ -19,28 +20,21 @@ h1{
 .middle-container{
     /*add width height properties and values to adjust size of container.*/
     background-color: forestgreen;
-    margin: 0;
+    margin: 0 auto;
     width: 200px;
     height: 200px;
-    padding: 0;
-    position: absolute;
 }
 .middle1{
     background-color: chocolate;
-    margin: 0;
-    position: absolute;
+    margin: 0 auto;
     height: 200px;
     width: 200px;
-    top: 325px;
-    left: 200px;
 }
 .bottom-container{
     background-color: darkorange;
-    position: absolute;
+    margin: 0 auto;
     width: 200px;
     height: 200px;
-    top: 525px;
-    left: 400px;
 }
 br{
 height: 5px;

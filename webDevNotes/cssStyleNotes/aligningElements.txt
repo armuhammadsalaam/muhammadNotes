@@ -1,6 +1,8 @@
 Aligning elements;
 
-Center text within an element. In the body element, text-align affects all text in body.
+Center text within an element. In the body element, text-align affects all text in body
+that does not have a width propery. Text align will affect elements within the parent
+element/container.
 
 	text-align: value;
 
@@ -42,4 +44,18 @@ See example below for CSS styling and div construction:
         <li>Mice</li>
     </ul>
 </div>
+
+
+	margin: auto 		this style will center an element either horizontally or
+				verticaly.
+	margin: 0 auto 0 auto 	this centers the element horizontally. both top and
+				bottom margins set to 0 while right and left set to auto
+	margin: auto 0 auto 0	centers the element horizontally. left and right set to 0
+	margin: 0 auto; 	center horizontal shorthand
+	margin: auto 0;		center vertical shorthand
+** refer to margin mdn web documentation for full margin functionality. **
+
+To manipulate an img element and remove it from the in-line HTML default flow, use the
+"position: absolute;" CSS style to change the image position
+
 
