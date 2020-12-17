@@ -1,3 +1,7 @@
+/* To manipulate an img element and remove it from the in-line HTML
+default flow, use "position: absolute;" CSS style propery and value
+to change the image position */
+
 body{
     background-color: black;
     color: firebrick;
@@ -62,8 +66,8 @@ Position values include static, relative, absolute, and fixed. */
  } */
 
  /* Code above adds 30px to the left of the image relative to the default static position */
- /* position: relative allows for manipulation of top, bottom, left, right spaces around element*/
- /* position: absolute will use coordinate top right left or bottom based on parent element.
+ /* position: relative; allows for manipulation of top, bottom, left, right spaces around element*/
+ /* position: absolute; will use coordinate top right left or bottom based on parent element.
  See doucument and try codepen.io to preview functionality */
 
  /* Remember to set default CSS body styling to margin: 0 for more accurate element absolute position
