@@ -25,6 +25,8 @@ Copy Files -
 	cp source_files	dest_directory	; copy multiple sources to directory
 	cp -i source destination ; run interactive mode
 	cp -r source_dir destination ;	copy source directory to destination
+
+Moving Files and Directories -
 	
 	mv filename directory	; move file to directory. if directory is
 				  empty, file will be renamed to second
@@ -41,6 +43,7 @@ Sorting Data -
 	sort -u		sort unique elements
 
 Creating a Collection of Files -
+
 	tar [-] c | x | t f tarfile [pattern] ** plz refer to man tar
 						for functionality.
 	tar -c 		create a tar archive
