@@ -23,22 +23,9 @@ h1 {
 }
 .middle-container {
   /*add width height properties and values to adjust size of container.*/
-  background-color: forestgreen;
-  margin: 0 auto;
-  width: 200px;
-  height: 200px;
-}
-.middle1 {
-  background-color: chocolate;
-  margin: 0 auto;
-  height: 200px;
-  width: 200px;
-}
-.bottom-container {
-  background-color: darkorange;
-  margin: 0 auto;
-  width: 200px;
-  height: 200px;
+
+  .bottom-container {
+  
 }
 br {
   height: 5px;
