@@ -2,80 +2,78 @@
 default flow, use "position: absolute;" CSS style propery and value
 to change the image position */
 
-body{
-    background-color: black;
-    color: firebrick;
-    margin: 0;
-    text-align: center;
+body {
+  background-color: black;
+  color: firebrick;
+  margin: 0;
+  text-align: center;
 }
 
 /* use .class to style classes from a particular element */
-.top-container{
-    /*refer to documentation for customizing margins around the different divs. Headers have their own
+.top-container {
+  /*refer to documentation for customizing margins around the different divs. Headers have their own
     margins that need unique adjustment if the div adjustments are not sufficient.*/
-    background-color: darkolivegreen;
-    margin: 0 auto;
-    padding: 0;
+  background-color: darkolivegreen;
+  margin: 0 auto;
+  padding: 0;
 }
-h1{
-    margin: 0;
-    padding: 0;
+h1 {
+  margin: 0;
+  padding: 0;
 }
-.middle-container{
-    /*add width height properties and values to adjust size of container.*/
-    background-color: forestgreen;
-    margin: 0 auto;
-    width: 200px;
-    height: 200px;
+.middle-container {
+  /*add width height properties and values to adjust size of container.*/
+  background-color: forestgreen;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
 }
-.middle1{
-    background-color: chocolate;
-    margin: 0 auto;
-    height: 200px;
-    width: 200px;
+.middle1 {
+  background-color: chocolate;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
 }
-.bottom-container{
-    background-color: darkorange;
-    margin: 0 auto;
-    width: 200px;
-    height: 200px;
+.bottom-container {
+  background-color: darkorange;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
 }
-br{
-height: 5px;
-margin: 0px;
+br {
+  height: 5px;
+  margin: 0px;
 }
 /* Refer to CSS <span></span> documentation for in-line elements and block elements such as <p></p>;
 inline-block elements have more functionality plz refer to docs: display:value ; 
 setting a display value to none will remove that element from showing up on web page 
 setting display:hidden will hide information from display but block element will still 
 occupy the same amount of screen space */
-p{
-    margin: 0;
+p {
+  margin: 0;
 }
-h2{
-    margin: 0;
-    padding: 0;
+h2 {
+  margin: 0;
+  padding: 0;
 }
 
 /* Refer to position attribute documentation for functionality.
 Position values include static, relative, absolute, and fixed. */
 
- /* img {
+/* img {
      position: relative 
     left: 30px;
  } */
 
- /* Code above adds 30px to the left of the image relative to the default static position */
- /* position: relative; allows for manipulation of top, bottom, left, right spaces around element*/
- /* position: absolute; will use coordinate top right left or bottom based on parent element.
+/* Code above adds 30px to the left of the image relative to the default static position */
+/* position: relative; allows for manipulation of top, bottom, left, right spaces around element*/
+/* position: absolute; will use coordinate top right left or bottom based on parent element.
  See doucument and try codepen.io to preview functionality */
 
- /* Remember to set default CSS body styling to margin: 0 for more accurate element absolute position
+/* Remember to set default CSS body styling to margin: 0 for more accurate element absolute position
  manipulation */
 
- /* positioning is affectd by the parent element, the body of the page is not always the element being
+/* positioning is affectd by the parent element, the body of the page is not always the element being
  manipulated, check the parent element and change relative and absolute positioning per your specs. */
 
 /* using position: fixed; will fix element to the page and not disappear after scrolling past the element */
-
-

@@ -31,4 +31,10 @@ fonts" to reduce likelihood of incorrect font type display; refer to documentati
 Use a stack of font fall backs (refer to CSS Font Stack) to avoid any particular browser
 not rendering a font type
 
+fonts.google.com offers several embedded fonts that will display the same font across all
+machines/browsers
 
+Copy the embed link for the fonts needed embedded onto the index.html page. use the
+hyperlink tag <link href="url" rel="stylesheet">; makes browser get font from link
+then, specify the font family by copy paste the property attributes from google fonts
+and place into body element or specified element h1 h2 etc. 
