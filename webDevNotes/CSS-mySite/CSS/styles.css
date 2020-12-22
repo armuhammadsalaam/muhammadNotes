@@ -17,19 +17,20 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+
+.logo {
+  background:none;
+}
 h1 {
   margin: 0;
   padding: 0;
 }
+
 .middle-container {
   /*add width height properties and values to adjust size of container.*/
-
-  .bottom-container {
-  
 }
-br {
-  height: 5px;
-  margin: 0px;
+
+.bottom-container {
 }
 /* Refer to CSS <span></span> documentation for in-line elements and block elements such as <p></p>;
 inline-block elements have more functionality plz refer to docs: display:value ; 
