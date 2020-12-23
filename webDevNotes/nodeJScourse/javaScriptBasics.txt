@@ -1,0 +1,18 @@
+- JavaScript Summary:
+
+- Weakly typed language;	does not require explicit type assignment; does
+				not force you to define which type of variable
+				you use when declaring a variable or function.
+				Data types can be switched dynamically. Be mindful
+				not to create errors when working with multiple
+				data types.
+
+- Object Oriented Language;	Data can be organized into logical objects.
+				Primitive vs reference object types. Please refer
+				to documentation for more details.
+
+- Versatile language;		JS typically runs in a browser, can also run on pc
+				and server. JS can perform a wide range of tasks.
+
+
+

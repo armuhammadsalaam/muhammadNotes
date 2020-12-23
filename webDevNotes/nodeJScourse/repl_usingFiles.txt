@@ -1,0 +1,20 @@
+- The REPL:
+	- access the REPL by typing command 'node' in terminal.
+	- terminal tool for writing and executing nodejs code:
+	- (R)ead -> read user input.
+	- (E)valuate -> evaluate user input.
+	- (P)rint -> Print Output (Result).
+	- (L)oop -> Wait for new input.
+	
+- The REPL command line interface does not save any lines of code; persists only for that particular session.
+	- used mainly for quick testing for a few lines of code
+	- executes the code as it's passed in.
+
+- Running/Executing Node.js Code:
+
+	- The main-stream method for running nodejs code is by using a text editor to write code to a file, then execute that file by means of an executable program.
+ 	- Executable files comprise the entire functionality of real apps.
+	- Can be executed repeatedly, with a predictable sequence of steps.
+	- Write the code in advance.
+
+ 

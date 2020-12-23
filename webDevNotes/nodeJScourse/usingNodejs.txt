@@ -1,0 +1,17 @@
+NodeJS Role in Web Development
+
+- Run a server:
+	- create server and listen to incoming requests
+
+- Business Logic:
+	- Handle incoming requests, validate user input, connect to a database.
+	- Work with files.
+	- Execute programs.
+- Responses:
+	- Return responses (fully rendered web pages; completes incoming request for a program. 
+	- Return data requested by client-side
+	- Data only. 
+	- Dynamic content.
+
+- Main programming language used is JavaScript
+ 
