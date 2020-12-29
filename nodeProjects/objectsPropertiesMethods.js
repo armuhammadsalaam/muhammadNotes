@@ -12,6 +12,7 @@ const person = {
 
 person.greet();
 
+// ARRAYS AND ARRAY METHODS
 // arrays in JS are lists of values, strings, objects, boolean values, objecsts, nested arrays
 // use [] indexing to manipulate elements in array
 
@@ -24,14 +25,12 @@ for (let activity of hobbies) {
   console.log(activity);
 }
 
-<<<<<<< HEAD
 // .map() method allows to manipulate an array; outputs a new array; old array unaffected
 // can use an arrow function or regular function to affect elements within the array
 
 
 console.log(hobbies.map(activity => 'Activity: ' + activity));
 console.log(hobbies);
-=======
 // JS supports several built-in methods to manipulate arrays; .pop() .push() etc
 // refer to documentation/notes for details on methods for arrays
 
@@ -52,4 +51,4 @@ console.log(
     return "Activity: " + activity;
   })
 );
->>>>>>> 561c4a6309f521a076586865043e25553f7d037c
+
