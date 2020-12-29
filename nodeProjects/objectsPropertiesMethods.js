@@ -24,3 +24,10 @@ const hobbies = ["Sports", "Cooking"];
 for (let activity of hobbies) {
   console.log(activity);
 }
+
+// .map() method allows to manipulate an array; outputs a new array; old array unaffected
+// can use an arrow function or regular function to affect elements within the array
+
+
+console.log(hobbies.map(activity => 'Activity: ' + activity));
+console.log(hobbies);
