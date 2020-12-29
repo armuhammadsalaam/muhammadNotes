@@ -20,14 +20,36 @@ const hobbies = ["Sports", "Cooking"];
 // use a for loop to iterate through elements of the array
 // can pass in any keyword to stand for the elements iterated from array
 
-
 for (let activity of hobbies) {
   console.log(activity);
 }
 
+<<<<<<< HEAD
 // .map() method allows to manipulate an array; outputs a new array; old array unaffected
 // can use an arrow function or regular function to affect elements within the array
 
 
 console.log(hobbies.map(activity => 'Activity: ' + activity));
 console.log(hobbies);
+=======
+// JS supports several built-in methods to manipulate arrays; .pop() .push() etc
+// refer to documentation/notes for details on methods for arrays
+
+// hobbies.pop();
+
+console.log(hobbies);
+
+// if you .pop() the array, the final element is removed; see console output
+
+// use .map() to make a new array; pass in a function that will iterate through array and affect each element.
+
+// hobbies.map()
+
+// print it to the console
+
+console.log(
+  hobbies.map((activity) => {
+    return "Activity: " + activity;
+  })
+);
+>>>>>>> 561c4a6309f521a076586865043e25553f7d037c
