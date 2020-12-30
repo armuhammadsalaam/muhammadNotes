@@ -25,7 +25,7 @@ console.log(slicedArray);
 const spreadArray = [...hobbies];
 console.log(spreadArray);
 
-// use ... operator on objects; creates new object with copied properties, methods etc.
+// use SPREAD ... operator on objects; creates new object with copied properties, methods etc.
 // see below
 
 const person = {
@@ -39,3 +39,13 @@ console.log(spreadPerson);
 // REST ... OPERATOR
 // the rest operator uses same syntax as the spread operator;
 // rest operator used to merge arguments passed in to a fucntion and outputs to an array.
+
+// Rest parameter syntax allows us to represent an indefinite number of arguments as an array
+
+// ex below using an arow function
+
+const toArray =  (...theArgs) => {
+  return theArgs;
+};
+
+console.log(toArray(1,2,3,4,5,6,7,8,9));
