@@ -1,0 +1,101 @@
+POWER SUPPLIES:
+	- ATX style power supply is the most common used in desktop PCs
+	- has a kill switch in the back
+	- may have voltage selector slider/switch
+	- exhaust fan air goes out through the power supply
+	- step down transformers that convert DC to AC
+	- ATX power connector in 2 pieces
+		- 20 and 4 pin two pieces on connector
+	- yellow is 12 volt
+	- red is 5 volt
+	- orange is 3.3 volt
+	- ATX12V extensions that allow more power to the motherboard
+	- some mother boards need 1 or 2 
+	- Molex connector -> older style plug for power supply
+	- Mini-connectors used to connect floppy drives
+	- SATA power connecter
+	- PCIe connectors usually for video cards
+	- modular power supplies allow for only the power cables you need
+	
+	- Power supplies transform AC from wall outlet to DC fr the computer 
+	- Standard connectors for motherboard are 20-24 pin ATX and 4-8 pin P4
+	- Use Molex and SATA connectors for peripherals and drives
+	- the ATX 12v power connectors send power to the CPU. The other devices get power from the main power connector
+	- Efficiency is a primary characteristic to be considrd when choosing a powr supply
+	- liquid cooling is the quietest solution 
+
+
+MOUNTING A POWER SUPPLY:
+
+	- usually comes out the back of the system
+	- some system unit cases have separate compartment for power supply with its own cooling
+	- screw into back of case depending on mounting features of the actual case
+	- ATX power supplies blow heat out the back
+	- use cable management through holes if you can
+	- Connect the main motherboard connector as well as any power for other peripherals / hardware in the system
+	
+	- munt power supply in case with four screws
+	- orient the power supply so fans draw air from the system unit
+	- connect motherboard primary and secondary power
+	- modular PSUs offer less cable clutter than non-modular PSUs
+
+CHOOSING A POWER SUPPLY:
+	
+	- different wattages for different power supplies
+	- different system wattages for different set ups
+	- maximum wattage is only used when all hardware that requires the power is running at full capacity
+	- the power supply only delivers power as needed
+	- power supply companies use the 80 plus rating system to declare the efficiency of at least 80% or higher for their power supply products
+	- standard ATX size power supply is useful for a majority of systems
+	
+	- get a PSU with a little more wattage than your system needs
+	- Shop for higher-efficiency power supplies
+	- modular power supplies cut down on cable clutter
+  	- efficiency is a primary characteristic when choosing a power supply
+	
+
+COOLING YOUR PC:
+	
+	- main dissipation of heat is through the heat sink first then to the cooling fins and fan
+	- pull cool air from the front and the top of system and force it out through the bottom and rear of system unit (usually by the power supply) 
+	- make sure not to block good air flow for fans to moev the heat
+	- an over heating system will reboot
+	- PWM connectors go from the motherboard to the fan so as to regulate the fans directly per the system's needs
+
+	- a heat sink draws heat from electrical components
+	- fans blow heated air through and out of the stystem
+	- fans speed and noise can be controlled through firmware or software (system setup or through a desktop app)
+	- liquid cooling is the quietest solution for cooling a PC
+
+TROUBLESHOOTING POWER SUPPLIES:
+
+	- power supply is the most common component to wear out / die first
+	- test the power supply to determine its life / life span left
+	- use a power supply tester by plugging it into the main ATX power connector
+	- all power supplies come over volted from the factory
+	- lower than rated voltage is a sign of slow death, but system can still run a volt or two below the rated voltage
+	- test the voltages on a motherboard with the power supply by using a multimeter V~ = AC / V~ ... = DC
+		- check to see the output of the probes on the multimeter; reading should match the rating for the plug i.e 12v 5.5v 3.3v etc
+		- good way to see if the power supply needs to be replaced
+
+	- power supplies die fas twith burning smell, smoke, or both.
+	- power supllies die slowly and cause intermittent problems (lower power outputs, random reboots etc)
+	- use PSU tester or multimeter to test power supplies
+	- CPU overheating causes shutdowns and rebots. Overheating does not increase or decrease performance. Overheating does not cause fans to spin faster
+
+TROUBLESHOOTING CORE COMPONENTS:
+
+	- make sure CPU is mounted correctly
+	- make sure RAM is installed in the correct channel per the motherboard book
+	- make sure the motherboard supports the correct type of graphics
+	- if there is any error after the initial system unit set up, take out all connections and reassemble the whole system unit from the beginning
+	- system lockups call for use of clear CMOS jumper to erase system setup and resets to factory defaults
+	- LEDs on the motherboards signal status for components throughout the sytem
+	- refer to the motherboard book to see what indicator lights mean to trouble shoot the components
+	- in the case of bad RAM sticks, use memory checking program / live storage OS for system recovery
+	- if power supply emits smoke or catches fire, immediately unplug and replace
+	- incorrectly installed CPUs or RAM can make it seem like your PC is dead
+	- Install core components and test before mounting into the case
+	- Errors is System Setup can cause a dead PC; try cleaning the CMOS jumper
+	- windows offers memory diagnostic tools to help with potentially bad RAM
+	- if installed RAM does not show up in the CMOS setup program, re-seat the RAM sticks into the correct channels per the motherboard book

@@ -1,0 +1,82 @@
+MOTHERBOARDS:
+
+Form Factors:
+	- standardized system unit specs to mount hardware
+	- I/O area
+	- ATX is biggest common form factor 12in by 9.6in
+	- MicroATX 9.6x9.6
+	- Mini-ITX form factor (smallest common form factor)
+	- ITX form factor (larger version of mini itx form factor)
+
+	- power supplies have standardized connectors
+	- I/O shields share a standardized size; doesn't matter how big the system unit case is, 99% shields fit 99% of cases
+
+
+
+CHIPSETS:
+	- special purpose chips: northbridge / southbridge
+	- northbridge did fast jobs
+	- southbridge connections to slower jobs
+	- CPUs today take care of northbridge functions
+	- chipsets determine what hardware you can attach to the motherboard
+	- Chipsets combine functions from many single-function chips
+	- Early chipsets offered northbridge and southbridge
+	- Modern chipsets feature Southbridge (CPU handles northbridge functions)
+	- Chipsets determine RAM capacity, USB capabilities, and more hardware attachments/interfaces
+
+MOTHERBOARD TOUR:
+	- motherboard book makes set up and documentation easily accessible
+	- most include some extra cables
+	- SATA cables for hard drives or SSDs go into the SATA HDD connectors
+	- power connecctors, chip sockets (check the type so its compatible with your cpu)
+	- capacitors:
+		- voltage regulator modules
+		- make sure capacitors are in good flat shape
+	- PCIe expansion slots:
+		- allows for hardware installation such as video cards
+		- 16 lane PCIe connector: uses serial connections
+		- parallel vs serial; serial is more efficient / reliable data transfer
+		- single lane PCIe socket; smaller PCIe devices can be placed into larger PCIe slots without a problem
+		- single lane 1X 16 lane is X16
+		- X4 PCIe has 4 lanes
+	- USB connectors; pin outs near the edges of the motherboard
+		- use dongles to complete the connectors
+		- serial connector dongle
+		- VGA connector dongle
+	- ssd m.2 drive connectors on the motherboard
+	- may not use all of the connectors
+	- connectors for RGB
+	- motherboards come with a lot of connectors and dongles out of the box.
+	- The motherboard manual provides essential setup information
+	- Motherboards come with cables, standard connectors, and more
+	- PCIe is the most common expansion BUS, it offers multiple lnes
+
+TOURING THE SYSTEM UNIT CASE:
+	- tower case; for storing many hard drives
+	- front pannel connections have various connectors audio usb audio etc
+	- standouts are standardized screw locations to mount the motherboard
+	- pass through
+	- hard drive mounts
+	- front panel connector cables run through the inside of the case and out of the way through the pass throughs
+	- cable management is important for organization and presentation
+	- power supply opening for mounting the power supply box and other hard drives
+	- slots for 2.5in hard drives
+	- fans located on more than one panel of the system unit box
+	- some cases do or do not have slots for mounting and optical drive
+	- cases offer standardized standouts for mounting various motherboard form factors
+	- better cases offer cable management features
+	- pick a case that has support for number and types of drives that you will use for your system.
+
+MOUNTING THE MOTHERBOARD TO THE CASE:
+	- test the motherboard with peripherals before mounting to the case
+	- mount the I/O shield
+	- clear the case of any cables to make room to mount the motherboard
+	- line up the board with the standoffs and I/O plate  on the case  
+	- make necessary cable connections after mounting the motherboard
+	- use motherboard docs / case docs for cable mappings
+	- fan connectors have 3 or 4 pins
+	- install and test CPU and RAM on motherboard before mounting to case
+	- install I/O shield and triple check standoff positions
+	- mount motherboard and connect motherboard cables
+	- use the motherboard manual if necessary
+	-

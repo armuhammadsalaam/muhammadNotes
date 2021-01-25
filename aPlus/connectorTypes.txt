@@ -1,0 +1,104 @@
+PS/2 - Mini DIN connectors:
+	-older types of round ports commonly used for keyboards and mice
+
+LPT or Parallel Port:
+	-used mainly for printers
+
+Serial Port:
+	-different peripheral devices
+
+VGA Display Ports:
+	-mainly for display monitors
+
+USB 2 / USB 3
+
+RJ 45 is the common type of port for  ethernet cable and other network connections
+
+various round jacks for input from microphones and output for speakers and headphones
+
+CPUs:
+	- central processing units run programs
+	- every CPU has internal features to process commands
+	- every CPU runs code based on a specific machine language
+	- CPUs use pipelines to optimize the processing commands
+
+	- CPUs have a clock speed commonly measured in GHz (billion cycles per second)
+	- 2 major manufacturers Intel and AMD
+	- CPUs take a system speed and multiply it to reach the desired/MAX clock speed
+	- Overclocking takes the default clock speed and tells CPU to work harder by multiplying the clock speed outside of default range
+	- Single CPUs often have multiple cores
+	
+System Cache:
+	- temporary system storage used to reconcile lag between cpu and ram (cpu ram called sram)
+	- used to avoid pipeline stalls
+	- 3 types of cache
+		- lvl 1 cache: only about 64Kb of ram, as fast as system clock speed
+		- lvl 2 cache: 'feeds' lvl 1 cache. More space 128Kb,256Kb, etc; runs about half of system clock speed 
+		- lvl 3 cache: space in the Mb, runs at base motherboard speed, lower rate than lvl 1 and lvl 2 system cache, and system RAM itself
+
+ CPU SOCKETS: PGA or LGA
+	- PGA pin grid array
+	- LGA land(pads) grid array
+
+INTEL vs AMD:
+	- INTEL 2 SOCKET TYPES
+		LGA 1151 mainstream type of socket
+		LGA 2066 enthusiast level cpu
+	- AMD 2 Socket types:
+		AMA 4 avg to enthusiast level
+		TM 4 powerful work station/ enthusiast level
+-CPU sockets are the mount where a CPU connects to the motherboard
+
+-CPUs have different microarchitectures as manufacturers improve their designs
+-many different CPUs come from a single microarchitecture
+-there are specific CPU socket packages covered on the A+
+
+INSTALLING A CPU:
+	- motherboard has to have the correct socket that processor has
+	- motherboard has to be able to operate / handle the speed of the processor
+	- always use thermal paste between he CPU and the fan 
+	- connect the fan to a power source
+	- fans:
+		- third party fans are often more efficient than OEM fans from the manufacturer
+		- liquid cooling uses a pump, a radiator, and a cooling block with liquid to remove heat 
+		- liquid cooling reduces fan noise
+
+TYPES OF RAM: make sure to use ram that operates with same type of RAM and compatible with  speed of motherboard clock
+	- PC speed rating is always 8x speed of DDR speed
+	- Use PC speed rating to determine what type of ram to use ex. PC2-speed will use DDR2 PC-speed uses DDR
+	- SDRAM synchronous data ram operates at the speed of the system clock; 168 pins
+	- DDR RAM double data rate goes double the speed of the system clock; 184 pins
+	- DDR 2 is double the speed of DDR and 4x speed of SDRAM; 240 pins
+	- DDR 3 is double the speed of DDR2 and 8x speed of SDRAM; 240 pins
+	- DDR 4 usually measured in Bandwidth MT/s Megatransfers per second; 288 pins
+		 ex clock speed of 266Hz will have a bandwidth of 2133 MT/s. 
+		* the machine I use is a 2133 speed ram DDR4
+
+RAM Capacity:
+	- single or double sided ram
+	- channels:
+		- dual channel memory; needs a stick in each channel to operate as fast as system can operate
+	- motherboards offer multichannel memory
+	- RAM should be identical in the same channel
+
+
+PARITY /  ECC RAM:
+	- error correction code 
+	- ECC allows for operation in the event of 2 bad chips
+		- parity only allows 1 chip
+	- motherboard needs to be ECC capable out of the box
+
+SO-DIMM :
+	- smaller form factor RAM commonly used in laptops
+	- same ram tech, smaller form factor
+	- DDR 3 and DDR 4 use consistent pin counts
+
+SERIAL PRESENCE DETECT (SPD) Chip:
+	- system chip that allows for query of RAM specs information
+	- Tools like CPU-Z for windows/mac or CPU-X for Linux read SPD information
+
+TO INSTALL RAM 
+	- Use the motherboard book to use the correct type and speed of ram to use.
+	- Line up notches in correct channel according to the motherboard book
+	- Boot up the system to see if the motherboard recognizes the added ram.
+	- Make sure the ram is fully installed and the channels are properly filled

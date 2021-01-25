@@ -1,0 +1,100 @@
+MASS STORAGE TECHNOLOGIES:
+	
+	- optical media, magnetic disks, SSD etc
+	- all storage devices have LBA (logical block addressing)
+	- piece of hardware on storage devices with software to determine data storage location per the block architecture (addressing)
+	- each block is 4096 bytes
+	- LBA will allocate however many blocks of storage needed per file, and determine the location/address of those blocks for that file
+	- LBA is inherent to all OS
+	- Capacity:
+		- 2^10 =  1024 bytes = KILO byte kebi
+		- 2^20 = MEGAbytes mebi
+		- 2^30 = GIGAbytes gebi
+		- 2^40 = TERAbytes tebi
+
+	- 5.25in hard drive format optical media
+	- 3.5in mass storage is the dominant formfactor
+	- 2.5in mass storage mostly used in laptops and mobile devices, or as external storage
+	- 1.8in mass storage
+	- m.2 is dominant format for SSD devices
+	- LBA for all systems
+	- Capacity is important depending on your system/purpose
+	
+	- There are many types of mass storage used today, including hard drives, solid state drives, and optical media
+	- Regardless of the media, your OS sees mass storage as a string of logical block addresses LBA
+	- There is a difference between decimal values and IEC values (refer to notes at top; refer to online documenation for more details.
+
+CLASSIC MAGNETIC DRIVES:
+
+	- stores information within sectors of the disk
+	- HDD hard disk drive (has to have something spinning on the inside)
+	- 3.5 and 2.5 are the main sizes capacitites as low as 20Mb, modern drives hold as much as 16 Tb
+	- Advanced technology attachment for older drives
+	- modern drives use seriel ATA or SATA
+	- SATA connector composed of power connector and data connector
+	- SATA plugs into the motherboard; motherboards have built in SATA controls
+	- can use any of the SATA connectors on the motherboard
+	- SATA is so popular that there is form factors for external storage devices eSATA
+	- eSATA connections designed to be used externally
+		- goes from I/O to external storage
+	- eSATA expansion card that snaps into motherboard to make it accessible
+	- should be visible in the system setup if successfully plugged in
+	- boot into the system setup to find where the external drives are located; lists the ports where the connections are if correctly installed
+	- magnetic disk drives use spinning platters to store data via magnetism and read/write heads
+	- hard disk drives come in 3.5, 2.5, and 1.8in physical sizes
+	- use the Advanced TEchnology Attachment protocol to communicate with hard disk drives
+	- the dominant ATA is called Serial ATA (SATA) 
+
+
+SOLID STATE DRIVES (SSD):
+	- becoming the dominant form factor for booting systems
+	- 2.5in format is most common, composed of chips 
+	- m.2 ssd is a smaller form factor
+	- common problems concern interfaces; very fast compared to HDD
+	- NVMe Non-Volatile Memory Express; commonly m.2 drives; much faster than the SATA connection
+	- type of SSD will be stated directly on packaging
+	- make sure the motherboard has the type of connection you need for your mass storage
+	- m.2 one notch is NVMe; usually directly on the motherboard
+	- proper installation shows up in the system setup
+	- SSDs store data using chips; there are no moving parts
+	- Data is stored in blocks and pages
+
+SCSI:
+	- small computer systems interface; uses a parallel interface with its own type of connector, competed with ATA, incompatible
+	- most connections today are in serial connections
+	- SCSI used today is a specific type called Serial Attached SCSI or SAS for short 
+ 	- not compatible with SATA
+	- not popular yet appears in systems
+	- ISCSI connected to system via ethernet cable, not usually on a desktop setup
+	- the small computer sytstems interface SCSI is an ancient standard that still has great suppost
+	- the old paralle scsi is long gone, but the scsi language lives on in serial scsi versions
+	- two modern scsi standards are SAS (serial attached SCSI) and iSCSI (ethernet/network cable  connection)
+
+BOOT ORDER:
+	
+	- looks for storage device from which to boot after going through the POST test
+	- can select any mass storage device to boot from, you can set a boot order to boot another storage device if present or absent
+	- define the boot order in the system setup
+		- make sure the system recognizes all of the storage devices
+		- "board explorer" on some systems
+		- check to see if all mass storage devices are recognized by the connections to the motherboard
+		- check SATA connections, m.2 connections, USB connections
+		- define the boot priority list
+		- go into the boot menu to check the order; most systems do not boot off UEFI mode
+		- most PCs will usually try to boot off the USB connections first
+	- when a system boots, it look for a bootable device
+	- it's importan to make sure the system looks for the correct boot devices
+	- the boot order is definded in the CMOS system setup
+
+	- storage is organized into Logical Block Addresses (LBAs)
+	
+	- ATA (advanced technology attachment) is a standard command and connection standard for mass sotrage devices
+	- SERIAL DATA TRANSFER PROTOCOL: data is transferred one bit at a time from the drive to the computer and one bit at a time from the computer to the drive. 
+	- SSDs are organized into logical blocks, but their memory storage cells are called PAGES
+	- MAGNETIC drive storage units are called SECTORS
+	- NVMe uses PCIe lanes and is the fastest of these interface choices. PATA is slowest; SATA and SCSI speeds fall between NVMe and PATA
+	- Serial Attached SCSI (SAS) uses the SATA connector with the SCSI command language. 
+	- M.2 is a connector interface and form factor
+	- iSCSI uses SCSI commands sent over Ethernet.
+	- UEFI is a firmware interface, not a boot device
+	- a computer cannot boot from a non-bootable device or media

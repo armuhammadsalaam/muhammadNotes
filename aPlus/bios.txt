@@ -1,0 +1,83 @@
+The BIOS:
+
+	- Basic Input/Output Services
+	- BIOS programming enables interaction with the motherboard before the OS boots
+	- firmware (as opposed to software) programming burned onto motherboard
+	- backup bios usually on another chip
+	- bios used to check assumed hardware before booting the OS
+	- Power on self test POST routines are built into firmware
+	- System Setup (CMOS) utility is also part of the firmware
+
+POST:
+
+	- power good wire talks to BIOS to run power on self test
+	- self diagnostic for all assumed hardware before booting up
+	- system unit beeps after POST from a mini-speaker
+	- if post returns an error, beep codes when machine has no video card or display
+	- no RAM beep code until machine is powered off
+	- display codes will display on the screen for errors
+	
+POST cards:
+	- hexidecimal two digit code readout
+	- refer to the motherboard book for (q-codes)  post error codes
+	- post codes only valid as machine boots up
+	- POST runs at boot, requesting devices to self check
+	- POST erros manifest as specific beep codes or display (text) codes
+	- POST cards enable testing of "dead" computers
+
+SYSTEM SETUP:
+
+	- Unified Extensible Firmware Interface (UEFI)
+	- supplanted BIOS; 
+	- in the case of a change in hardware, System Setup is an interface to make changes of changeable part of BIOS
+	- hold down a key before the OS boots
+	- "press DEL or F2" immediately; takes you to system setup
+	- main section shows basic specs and motherboard info
+	- main/security allows you to set up an administrator password; needed for critical OS functions and changing of BIOS settings; "supervisor password"
+	- setting only the USER password prevents boot without using a password; system password/power-on password
+	- can set overclocking setting
+	- advanced settings:
+		- on board device configurations
+		- turn off sound card
+		- mass storage devices
+		- disable specific connections
+		- disable network cards
+		- serial port settings
+	- boot settings:
+		- secure boot options to boot from specific devices
+		- disable specific boot options
+	- tool settings:
+		- access flash utilities to flash new BIOS firmware to the motherboard
+		- update/flash BIOS
+		- can update from a storage device or the web
+	- UEFI replaces traditional 16-bit BIOS in modern systems
+	- System Setup enables custom information about changeable devices
+	- System Setup enables changes to CPU frequencies (overclocking) RAM timings, BIOS passwords, boot options (i.e boot options/boot from USB)
+
+TROUBLESHOOTING FIRMWARE:
+
+	- Single Flash ROM chips (flash memory) stores the troubleshooting firmware
+	- can flash or reprogram the ROM chip
+	- RTC real time clock
+	- every motherboard has a built in CMOS battery to keep chips like the RTC alive even when unplugged
+	- the system needs a good battery in order to keep accurate track of time 
+	- if the battery dies, all of the updated system information fails/disappears
+	- resolve by installing a new battery CR 2032 
+	- can change settings without saving the settings before exiting the firmware
+	- some systems include preset system tuning
+	- look for default settings button to reset settings to default
+	- Flashing the ROM updates the firmware on flash chip 
+		- make sure you will not lose power while flashing the ROM chip
+		- make sure you have a complete BIOS flash image
+		- make sure you know why you are updating
+		- some motherboards have 2 BIOS chips in case one fails
+		- update through storage device or update via the internet; accept the warning prompts
+		- update to accept new technology cpu ram, usb firmware updates
+		- go to manufacturer website and research firmware updates for a particular motherboard
+	
+	- RTC battery keeps system time without external power
+	- System setup allows for changes, exit without saving is an option
+	- Reset System Settings for defaults
+	- Flash the ROM chip to update firmware
+
+SERVICES ARE BIOS PROGRAMS THAT MAKE HARDWARE FUNCTIONAL
