@@ -1,0 +1,114 @@
+Implementing mass storage for first time on a blank drive:
+
+	- format the mass storage device during the installation process
+	- installation begins after formatting the storage device
+	- linux install process also gives options for custom partitions / formatting
+	- partitioning / formatting always on a new storage device
+	- any OS installation process usually includes as formatting/partitioning feature
+	- the first drive on a system relies on the OS install program to provide partition and format functions
+	- the partitioning and formatting tools in  installation programs provide a subset of tools when compared with their main tools
+	- installation tools may provide features not normally seen anywhere else (such as swap file creation) 
+
+RAID:
+
+	- redundant array of inexpensive disks (RAID) 
+	- provide speed and data redundancy
+	- raid levels:
+		- raid 0 / striping : minimum 2 drives; stores pieces of each file throughout each storage device in the RAID setup until the file is completely saved
+		- there are multiple drives accessing the data; good for speed
+		- if either of the device dies, you lose all data
+		- raid 1 / mirroring: 2 drives, can configure with 4 drives
+			- store copies of pieces of file in each device; redundancy / safety
+			- slower bc it writes the same piece of data at the same time
+		- raid 5 / striping with parity: minimum of 3 drives needed; 
+			- take pieces of each file and write them between the first 2 drives;
+			- the 3rd device creates a parity value of the same size as the stored pieces of data
+			- if any of the drives dies, use the parity value to restore the data
+			- downside is that you can only lose 1 drive to be able to recover data; loss of more than 1 drive is loss of data
+		- raid 6 / creates 2 parity values per piece of data; can lose up to two drives before loss of data; more redundancy 
+		- can use multiple levels of RAID at once:
+		- RAID 10 / striping mirrors: minimum of 2 pairs of drives 4 total:
+			- 2 separate pairs of mirrored drives in raid 1: this configuration will take a piece of data and mirror it across the first pair, then striping and mirroring on the next pair of drives i.e stripe the two mirrored pairs
+			- can lose one of the mirrored pair from each separate pair without loss of data; if both drives in either of the mirrored pairs are lost, there is loss of data.
+		- RAID 0 + 1 / mirror the stripes: requires a minimum of 2 pairs of drives; this configuration mirrors the stripes being created by the memory allocation
+			- takes a piece of data to each drive of the striped pair, then mirrors the piece of data in each drive to the second striped pair of drives: the two striped pairs are mirrored.
+			- able to lose a complete striped pair of drives without data loss; losing one on each side causes data loss
+	
+HOW TO SET UP RAID:
+	- RAID hardware: plug drives into a RAID controller on the motherboard and configure RAID type through the system setup or the BIOS
+	- RAID software: most operating systems support some level of RAID built in
+	- propriety RAIDs built by particular computer companies.
+
+- RAID provides speed and/or redundancy
+- RAID 0 (striping) provides speed
+- RAID 1 (mirroring) provides redundancy
+- RAID 5 and 6 (striping with parity) provides speed and redundancy
+- RAID 5 can only lose one drive in the array; 
+- RAID 6 can lose two
+
+
+HARDWARE RAID:
+
+- have to change the system setup for drives to be recognized as a RAID array and not regular mass storage
+- CTRL - R during boot to access RAID array configurations
+
+
+- hardware RAID requires a controller to configure the RAID arrays
+- hardware RAID has its own BIOS that comes with a special system setup to configure the RAID array
+- the completed array looks like a single drive to the operating system
+
+MASS STORAGE TROUBLESHOOTING:
+
+- back up your mass storage
+- mental reinstall
+- triple check; 
+
+examples of problems to troubleshoot:
+
+- RAID not found / RAID not working:
+	- make sure RAID controllers are active; correct drivers for the system
+	- check the RAID configurations in system setup
+	- make sure everything is connected properly and that everything has power
+	- check power, connections, mental reinstall
+
+- read/write failure:
+	- S.M.A.R.T: built into all hard drives; small program that checks the health status of all system hard drives.
+	- usually end up replacing the drive 
+
+- slow performance:
+	- check your RAM usage
+
+- loud clicking:
+	- terminal error with no solution; replace hdd
+
+- failure to boot:
+	- check boot order
+	- use system recovery tools 
+
+- drive not recognized:
+	- formatting issue
+	- re-format the drive 
+	- initialize the disk before OS recognizes it
+
+- OS not found:
+	- check the boot process 
+	- go into system setup to check boot order
+
+- attempts to boot incorrect device:
+	- check boot order in system setup
+
+- continuous reboots:
+	- check OS system setup
+	- troubleshoot the OS on start-up
+	- everything runs on a controller; check to see if all controllers are enabled
+
+
+- many troubleshooting questions on the EXAM
+
+- always back up important data before troubleshooting mass storage
+- use a mental process of installation to make sure all the installation steps have taken place
+
+
+- a dedicated RAID controller comes in the form of an expansion card. Storage Spaces is a Microsoft software RAID implementation. Dynamic and basic disks are not RAID controllers
+
+- the most likely result of a corrupt operating system is continuous reboots. Boot order is set in the UEFI.BIOS system setup utility. A corrupt OS can cause crashes and reboots, not slow performance. Hard drive clicking comes from a mechanical failure inside the hard drive.

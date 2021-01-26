@@ -1,0 +1,16 @@
+refer to the sample code below for an example on how to reverse a string:
+
+
+function reverseString(str) {
+  return str
+    .split("")
+    .reverse()
+    .join("");
+}
+
+	- split the string by characters using .split(""); leave quotes empty makes function split the string by each character
+	- using the .split() function will turn the string into an array of characters, keep that in mind as we move forward.
+	- chain the .revers() function; takes array of characters and reverses them.
+	- chain .reverse() function which takes our array of characters and reverses them
+	- chain .join("") to put all characters back together into a string; do not pass in any spaces in the argument for join function; this makes sure that the array of characters is joined back together by each character
+	
