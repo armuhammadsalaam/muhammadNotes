@@ -1,0 +1,70 @@
+OPTICAL MEDIA:
+
+	- optical media disks have been in use since the 80s
+	- three groups: CD DVD BluRay
+
+CD - Compact Disc:
+	- stores data digitally
+	- read by laser
+	- CD-ROM: compact disc/read-only memory
+		- stores data in CD File System (CDFS)
+	- CD-R: CD-recordable, allows to write your own data to the disk; burn data to the disk, but could not be erased
+	- CD-RW: CD read and write, allows for burning and deletion of data
+	- CD downside was the small storage capacity:
+		- only around 650Mb-700Mb
+
+DVD (Digital Video Disc):
+	- modern known as "digital versatile disc"; originally meant to play video/movies
+	- surround sound capable
+	- DVD-ROM to store data; most common type of optical media today
+	- Dual-layer (DL) format
+	- Double-sided (DS) format
+	- examples of storage capacities for DVDs:
+		- DVD-5 (12cm, SS/SL): 4.37Gb, more than 2hrs of video
+		- DVD-9 (12cm, SS/DL): 7.95Gb, about 4hrs of video
+		- DVD-10 (12cm, DS/DL): 8.74Gb, 4.5hrs of video
+		- DVD-18 (12cm, DS/DL) 15.90Gb, 8hrs+ of video
+	- burnable version of DVD; optical drives today have no problem reading/writing to the old types of DVD.
+
+Blu-Ray Disc:
+	- superior design
+	- available in 2 capacities:
+		- Standard disc 12cm 
+			- single layer 25Gb
+			- dual layer 50Gb
+		- mini disc 8cm
+			- single layer 7.8Gb
+			- dual layer 15.6Gb
+	- BD-RE: Blu-ray Disc Recordable Erasable
+	- rarely use large capacity blu-ray for driver software
+
+- all computers ready to talk to all optical drives
+	- connect sata cable
+	- connect power cable
+	- check the system setup to see if your OS recognizes it 
+
+- Compact discs CDs store 650-700Mb of data
+- Digital versatile discs DVDs store from 4.37Gb to 15.9Gb
+- Blu-ray discs BDs store 25Gb to 50Gb
+- All optical media comes in read-only-memory (ROM), write-once (R) and write-many RW/RE versions
+
+
+
+USB STANDARDS:
+
+	- main way of connecting anything to a computer
+	- many USB standards:
+
+- USB 1.1 (1.5Mbps/12Mbps)
+- USB 2.0 (480 Mbps)
+- USB 3.0 (5 Gbps); had many compatibility issues
+- USB 3.1 (gen 1 5Gbps/ gen 2 10 Gbps)
+- important to know these speeds for the exam
+
+- most common USB connectors:
+	- USB Type-A connector
+	- USB Type-B connector; usually goes to a device
+	- USB mini-B connector; goes to smaller devices
+	- USB micro-B connector; common in android devices
+	- USB 3.0 micro-B 
+	- USB type-C
