@@ -112,5 +112,19 @@ TROUBLESHOOTING MONITORS:
 	- replace cables if needed; hdmi connectors can wear out
 
 - Distorted Image:
-	- 
+	- make sure monitor is running at native resolution
+	- for projectors, make sure lenses geometry is adjusted correctly
+
+- Burn-In:
+	- old plasma monitors had tech specifically for repairing image burn in
+	- LCD monitors may get "image persistence"; change the image on the screen for LCD to correct itself
+
+- Oversized images and Icons:
+	- adjust text size/icon size  in system settings
+
+- the CompTIA exams cover many monitor trouble shooting situations
+- all above issues will be in the exam
+- make sure to memorize how to troubleshoot monitors
+
+- DRM (DIGITAL RIGHTS MANAGEMENT) : HDMI SUPPORTS DRM 
 	
