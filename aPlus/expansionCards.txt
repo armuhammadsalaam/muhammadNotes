@@ -1,0 +1,30 @@
+EXPANSION CARDS:
+
+- use expansion slots on the system case to add expansion cards
+	- video cards etc
+	- PCIe expansion slots 
+
+- to install expansion cards:
+	- power connectors
+	- driver discs
+	- make sure to not block air flow
+	- make sure to check cable routing
+	- screw in to system case after installing before booting up
+	- use device manager settings to check if expansion card is recognized
+	- if OS does not recognize the card, will need to use the driver
+	  optical disc
+	- some expansion cards include their own software or applications to
+	  aid in configuration for its settings
+	- troubleshoot: check for driver updates, check for OS compatibility
+	- check to see if expansion card operates correctly; first place to
+	  look is drivers
+
+
+- always handle expansion cards carefully, avoiding the metal contacts
+- apply power, data connections or dongles as needed
+- make sure to add the correct driver, check Device Manager to confirm good
+  drivers
+- a new device installation is a common place for Blue Screen of Death
+  error by Windows that calls for a reboot 
+
+

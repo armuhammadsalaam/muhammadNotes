@@ -1,0 +1,39 @@
+SIGHT AND SOUND PERIPHERALS:
+
+- microphones, speakers, webcams, etc.
+
+- SPEAKERS:
+	- stereo speakers
+	- 2.1 speaker system (2 speakers 1 sub)
+	- most computers have support for multiple speaker setups
+	- 3.5mm jack goes to the computer to provide the sound output
+	- aux: blue
+	- green: front 2 stereo speakers
+	- pink: microphone
+	- silver: side speakers
+	- black: rear speakers
+	- orange: sub-woofer and center channel 
+	- 7.1 setup is very common in many modern systems
+	- sound quality depends on sound card installed
+	- S/PDIF (Sony/Phillips Digital Interface): optical audio jack for
+	  output to peripherals
+		- plug computer to a receiver system
+	
+- Headsets:
+	- with or without mics
+	- some have USB connectors, others 3.5mm plug
+
+- CONFIGURATION:
+	- go to sound settings for mic and speakers
+	- make sure everything is connected to power 
+	- check all volume settings across the board before checking drivers
+
+- WEBCAM:
+	- video transmission 
+
+- Sound is commonly built into today's systems
+- Speaker systems include satellites and sub-woofers, called 2.1 or 5,1
+  systems
+- Sound uses 3.5 jacks or SPDIF (optical audio throughput)
+- Many devices, like webcams or headsets, include speakers
+

@@ -1,0 +1,116 @@
+GRAPHICS CARDS:
+
+- GPU: graphics processing unit
+- modern graphics cards use more powerful RAM chips and processors
+- Nvidia Corp. and ATI/AMD are major graphics card manufactureres
+	- Intel also makes graphics cards but they are not as popular; designed to work on the actual motherboard itself
+- majority of motherboards today have integrated GPUs
+- AMD packages a CPU with a GPU as an APU
+- common for motherboards today to have their own RAM to be able to handle talking to the GPU
+- Connectors to graphics cards:
+	- VGA (Video Graphics Array); blue 15pin connector; analog signal
+	- DVI (Digital Visual Interface); digital signal; DVI to VGA connectors for older systems 
+	->DVI-I (digital and analog)
+	- DVI-D -> digital only throughput
+	- single link DVI and Dual link DVI
+		- dual link allows for output to 2 monitors or 1 high res monitors
+- Digital Rights Management:
+	- HDMI (High Definition Multimedia Interface)
+		- video and audio
+		- solves some digital rights issues
+		- mini-hdmi for smaller devices
+		- automatic configurations
+	- Display port used for dedicated video card throughput
+		- competitor to HDMI 
+		- also has mini-display port
+
+- multiple connectors on a graphics card for versatility with multiple monitors
+- make sure to use the default port for initial startup
+
+- Nvidia, AMD (ATI) and Intel make the majority of GPUs
+- all graphics cards have RAM to help resolve the screen
+- many CPUs come with built-in GPUs
+- VGA uses an analog signal; DVI uses a digital signal
+
+
+INSTALLING A GRAPHICS CARD:
+
+- try to use the default connector first
+- plug into PCIe slots
+- make sure all screws are tightened
+- make all PCIe power connections
+- on bootup, go to CMOS:
+	- select which GPU to boot from; default setting is usually to boot from motherboard GPUs
+
+- Riser card:
+	- PCIe 16 lane on one side, PCIe single lane on the other end of the connector
+	- expansion for more graphics cards
+	
+- inital boot:
+	- go to device manager to make sure GPU is recognized
+	- make sure the graphics card is compatible with the native resolution of the monitor used
+	- make sure to run in native resolution
+	- can use scaling of graphical displays
+	- pull latest drivers from manufacturer website to update
+	
+- almost all graphics cards use 16-lane PCIe slots and one or two PCIe power connectors
+- with multiple graphics cards, define the primaryu card in system setup
+- some systems provide riser cards for extra graphics cards
+- always run the sytem at your monitor's native resolution
+
+
+PROJECTORS:
+
+- monitor projected onto a surface
+- use common connectors to the system unit
+- have their own graphics cards
+- DLP and LCD projectors
+- all have integrated light sources: sold by brightness rating measured in Lumens
+- LED bulbs last longest
+- throw:
+	- projection best distance from screen
+	- pin cushion style lenses
+	- key stone lenses 
+	- skew lenses
+
+- bulbs, throw, and adjustments
+
+- prjectors have rsolutions and aspect ratios just like monitors
+- projectors usually have either DLP or LCD technology
+- lumens define the brightness of the projector
+- make sure to understand throw, pin cushion, keystone, and skew type projector lenses
+
+
+
+TROUBLESHOOTING MONITORS:
+
+- Overheat Shutdown:
+	- GPU gets hot and shuts down:
+		- make sure fans are functioning correctly
+		- make sure GPU has enough air flow / ventilation
+- Dead pixels:
+	- occurs in LCD monitors
+	- dead pixels in the center of screen call for a return to the manufacturer
+	- all manufacturers tolerate a certain number of dead pixels per company warranty
+		
+- Artifacts:
+	- data on the screen that does not belong / did not refresh 
+	- make sure video RAM is functioning properly
+	- test with a working GPU to single out RAM deficit; will need to be replaced as gpu RAM is usually soldered in
+		
+- Incorrect color patterns:
+	- check all connections first
+	- check GPU RAM by using a working GPU
+	
+- DIM image:
+	-  not enough light output
+	- replace CCFL
+	- check brightness settings
+
+- Flickering Image:
+	- check all cables and connectors
+	- replace cables if needed; hdmi connectors can wear out
+
+- Distorted Image:
+	- 
+	

@@ -1,0 +1,42 @@
+READERS AND SCANNERS:
+
+- smart cards:
+	- chips on credit / debit cards
+	- use a smart card reader to read the chip
+	- used for authentication
+	- sometimes on laptops 
+	- common transactions
+- magnetic readers:
+	- swipe your credit cards
+
+- flash memory reader:
+	- powered by USB
+	- many slots for various flash memory
+	- several formats for flash memory:
+		- SD card
+		- mini SD
+		- micro SD
+		- Olympus xD picture card; used to be popular for olympus
+		  brand cameras; not very common anymore but will be on the
+test
+
+- flat bed scanner:
+	- used to scan documents, photographs, etc
+	- downside one page at a time
+	- scanners that have ADF auto document feed, can take multiple
+	  documents
+
+- barcode/ qr code scanners:
+	- codes store small bits of info
+	- modern pistol style scanners can read both types of codes
+	- can use smart phone application for these type of code scanner
+
+
+- smart card/magnetic readers are used to read cards
+- flash memory readers read many types of flash memory
+- SD cards are very popular flash memory
+- scanners read paper documents; automatic document feeders enable scanning
+  multiple pages
+- barcode and qr code scanners read printed code labels
+
+

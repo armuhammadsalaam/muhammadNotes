@@ -1,0 +1,18 @@
+KEYBOARDS AND MICE:
+
+- wired runs at USB 1.1
+- some have PS/2 connectors; less latency than USB 1.1
+	- system has to be shut down for system to recognize upon boot; does not recognize while OS is running
+- Windows 10 mouse and keyboard settings are found under settings/Bluetooth and other devices
+- exam will call for the CONTROL PANEL to change peripheral device settings
+- game controllers will have settings within a game and not in the system settings
+- KVM switch, keyboard video mouse; allows you to keep one set of peripherals and monitors for multiple system units by switching the input on the KVM switch 
+	- consists of separate USB connectors for keyboard and mouse
+	- will have multiple ports for the multiple computers on the KVM switch
+	- special hdmi to hdmi/usb/ps2/3.5mm that goes from the KVM box to the system unit so as to connect to the box via one big cable
+	- press the button corresponding to the computer you want to use
+- keyboards use either a USB or PS/2 connection
+- Mice most exclusively use USB
+- Game controller often have  proprietary connection that requires a converter
+- Keyboard, video mouse (KVM) switches enable multiple computers to share a single keyboard, monitor, and mouse
+

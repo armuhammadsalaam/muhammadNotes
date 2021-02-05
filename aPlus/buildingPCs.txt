@@ -1,0 +1,67 @@
+BUILDING A PC:
+
+- Standard Thick Client:
+	- most basic type of desktop computer
+	- use hardware that meets recommded requirements for selected OS
+		- includes motherboard, processor, storage, RAM, and OS, expansion cards
+	- Desktop applications
+	
+- Standard thin client:	
+	- operates mainly through network connectivity; rarely relies on its internal storage to operate
+	- hardware:
+		- motherboard with good network connectivity Gb
+		- meets minimum(recommnded) requirements for selected OS; 
+	- does not use its own storage to keep its applications/programs
+	- thin systems will have at least basic applications installed; sometimes only need specialized in-house applications
+	
+	
+	- build a Graphic/CAD/CAM Design Workstation:
+		- usually includes powerful multi-core processor and high-end video card 
+		- hardware:
+			- multicore processor
+			- high-end video card
+			- maximum RAM
+	
+- Virtualization Workstation:
+	- Maximum RAM and CPU cores
+	- hardware needed:
+		- high-end motherboard and processor
+		- compatible OS
+		- extra storage drives
+	
+- building Network Attached Storage (NATS):
+	- headless system
+	- file sharing is main purpose
+	- not many peripherals connected during uptime
+	- hardware needed:
+		- Gigabit NIC
+		- RAID array
+		- midrange motherboard
+		- midrange CPU
+		- Gigabit ethernet network expansion card
+		- minimum of 4 drives for a stable large RAID system storage
+	- no peripherals needed after initial setup
+	- connect to it through the network
+
+- build a Gaming PC:
+	- requires a strong multi-core processor
+	- strong motherboard
+	- high-end power supply
+	- high-end cooling
+	- high-end video and specialized GPU; use SLI to take advantage of 2 video cards on the same system unit / monitor
+	- high definition sound card
+	- large mass storage; combo of SSD and HDD
+	
+- build an Audio and Video Workstation:
+	- hardware:
+		- specialized audio and video card
+		- large, fast hard drive
+		- dual monitors
+		- Macs offer good out of the box hardware for audio and video workstations
+	
+	
+THE EXAM WILL TEST DETAILS ABOUT EACH SPECIALIZED BUILDING
+
+- consider different jobs and make sure the system matches the job specs
+- concentarate on RAM, storage, and graphics needs
+

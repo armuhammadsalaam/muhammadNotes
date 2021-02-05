@@ -1,0 +1,49 @@
+Monitor Technologies:
+
+- main output device
+- composed of pixels:
+	- picture elements
+	- liquid crystal display LCD
+	- Red, Green, Blue on each pixel
+	- simply allows light to pass through or blocks light to create the overall image on the monitor
+	- needs backlight to operate
+	- LEDs (light emitting diodes) used in modern monitor systems
+
+- Resolution:
+	- resolution is fixed per monitor
+
+- Brightness measured in Nits (200-500)
+
+- Response time 1ms-4ms
+
+- OLED (organic LED); has 3 lights per RGB; for thin monitors and small devices; 
+
+- DLP (digital light processing)
+	-  grid of tiny mirrors that defines the resolution
+	- common in projector technologies
+	
+- a monitor is composed of individual picture elements (pixels); the total pixels across and down is the resolution
+- Liquid Crystal Display (LCD) monitors use liquid crystals to allow light to pass or not pass for each color in a pixel
+- lcd backlights are fluorescent or LED lights and shine through the liquid crystals
+- organic LED (OLED) doesn't use a backlight, as the pixels make their own light
+- Digital light processing (DLP) uses a grid of tiny mirrors that shine through a color wheel to create an image
+
+LCD BREAKDOWN:
+
+- LCD panel is the largest piece of monitor with attached pcb and controller chips
+- CCFL tubes under white panel to provide light
+- power connector and inputs on the back of the screen
+- ONLY CCFL SCREENS NEED INVERTERS
+
+
+- WHEN WORKING WITH AN LCD PANEL:
+	- Panel
+	- separate backlight unit; remember that CCFL monitors need a power inverter to operate
+	- connectors
+	- input from data connection
+	- power connection
+
+- LCD panels have a preset resolution
+- the back panel backlight unit distributes the light emanating from the CCFL or LED backlights
+- inverters convert DC power back into AC power for fluorescent lights; LEDs do not need inverters
+
