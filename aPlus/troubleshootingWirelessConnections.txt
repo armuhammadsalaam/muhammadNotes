@@ -1,0 +1,24 @@
+TROUBLESHOOTING WIRELESS CONNECTIONS:
+
+	- Common errors:
+		- useful to have a wifi analyzer ex wifiman
+		- no connectivity:
+			- some SSID that doesn't exist; changed name or password
+		- low RF signal:
+			- get closer to SSID
+			- inspect antennaes
+			- point all antennaes straight upward
+		- if broadcasting is turned off for a particular SSID, you will need to know precise name of SSID, security type and password to acces the WAP
+		- limited connectivity / no connectivity:
+			- slow transfer speeds, interference
+			- low RF signal
+		- intermittent connectivity:
+			- connection spotty/ in and out
+			- low RF signal
+			- too many connections on a single WAP
+			- QOS
+			- set up particular ports for specific uses
+RECAP:
+	- exam will list specific wireless erros
+	- wifi analyzers are very helpful to diagnose wireless problems
+	- memorize fixes for the wireless problems

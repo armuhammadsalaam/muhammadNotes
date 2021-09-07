@@ -1,0 +1,31 @@
+Other connections besides WiFi:
+
+	- Radio Frequency Identification (RFID)
+		- popular in warehouses, industrial settings, etc
+		- small sticker that stores information
+		- scanner to powerup sticker and read the info
+		- among individual users, this technology is referred to as:
+			- NFC (Near Field Communication)
+			- ex laser printer (tap to print)
+			- tap-to-pay
+			- same as RFID
+	- BluTooth:
+		- main difference from 802.11: 
+			- blutooth designed to connect only two devices at one time in a Personal Area Network (PAN) environment
+		- comes in 3 classes:
+			1. power 100mW range 100m
+			2. 2.5mW range 10m
+			3. 1mW range 1m 
+		- pairing:
+			- turn on blutooth
+			- turn on other device
+			- start pairing
+			- set first device in discoverable mode
+			- some need to pair with pin
+	- RFID is slower and low power; scanner as a reader
+
+RECAP:
+	- RFID uses tiny radios activated by ythe energy of the scanning device
+	- NFC requires close proximity to function
+	- Bluetooth is like 802.11 but pairs with devices to function as point-to-point
+

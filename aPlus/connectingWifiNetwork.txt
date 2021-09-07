@@ -1,0 +1,16 @@
+Connecting to a Wifi Network:
+	- check SSID and security type / password
+	- check visibility
+	- make sure network card is not disabled
+	- wifi profiles listed will be saved for future connectivity
+		- make sure to update and/or forget networks that are no longer useful
+	- Issues with connecting to an SSID
+		1. NIC is configured as DHCP client
+		2. Passwords can change
+		3. Set wireless NIC to a static IP address
+	- can configure WAP completely remotely
+
+RECAP:
+	- All wireless clients can scan the 802.11 spectrum, finding available SSIDs
+	- You must know the SSID and password to connect
+	- Clients create profiles that store the SSIDs and their passwords

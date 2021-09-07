@@ -1,0 +1,10 @@
+Wireless Mesh Network:
+	- one base station connected to network
+	- configure SSID
+	- place external stations; where ever you want better wifi coverage
+	- mesh devices use 3rd party encryption for security
+RECAP:
+	- Mesh networks are often a great wireless solution for SOHO environments
+	- Mesh networks have a base station and beacon devices that connect to the base station
+	- Mesh networks use their own encryption
+	- Mesh networks are universally easy to configure
