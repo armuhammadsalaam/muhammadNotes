@@ -1,0 +1,187 @@
+﻿INTRODUCTION TO NETWORKING:
+
+
+* Local Area Networks (LAN):
+   * All system units are hard-wired to a central system unit.
+   * Modern version uses wifi-access-point (WAP).
+* Ethernet network:
+   * Developed in the 1970s
+   * Very popular today for network connectivity
+   * Data throughput in discrete chunks of 1500 bites
+   * Frame: the chunks of 1500 bites
+* Identify system units on the LAN with MAC (media access control) address; 12 hexadecimal characters
+   * Every network card has a unique MAC address
+   * First 6 characters of MAC address are OEM ID
+   * Windows cmd: ipconfig /all
+      * “Physical address” is MAC address of network card
+   * MacOS and Linux cmd: ifconfig 19
+* ETHERNET FRAME STRUCTURE FOR NETWORK THROUGHPUT:
+   * OEM ID + SOURCE MAC + DATA + FCS (frame check sequence)
+
+
+* LAN computers connect with Ethernet
+* Ethernet frames standardized as 1500 bytes
+* A MAC address uniquely identifies a host on a LAN
+* Use windows cmd ipconfig or Linux cmd ifconfig to view MAC
+
+
+
+
+HUBS VS SWITCHES:
+
+
+* Hub takes input from a system unit and repeats it to be shared with other system units on the LAN
+* Hub has a max throughput of 10 MB/s to be split among all pcs on the network
+* Switch:
+   * Stores all MAC addresses
+   * Takes frames from origin pc and makes a physical connection to destination pc on the network
+   * Allows for faster throughput because the connections are not shared
+   * More common and more efficient than hubs; hubs are not common in most modern systems
+* Hub repeats throughput and shares connection speed with all computers on the network
+* Switch repeats throughput but makes a physical connection to destination pc
+
+
+* Hubs repeat all traffic on the LAN to all nodes
+* Switches filter traffic based on MAC addresses
+* Switches provide full bandwidth for all nodes
+
+
+HEXADECIMALS:
+
+
+* Complete base 16 numbering system used for throughput communication to relieve binary number bloating
+* Every hexadecimal value represents 4 binary number values
+* MAC address consists of 12 hexadecimal values for a 48bit physical address
+
+
+* Hexadecimal base 16 enables discussion of long strings of binary 1s and 0s
+* Each hex character represents 4 binary numbers
+* In hex, numbers goes from 0-9, a-f, for 0-15 inclusive
+
+
+
+
+
+
+WAN (WIDE AREA NETWORKS) AND ROUTERS:
+
+
+* Routers:
+   * Sensitive to different local area networks
+   * Logical addressing:
+      * User defined LAN identifier
+      * Different ports on the router go to different LAN
+      * “IP addressing”
+   * DHCP to automatically configure addressing
+* MAC address for LAN, IP address to communicate outside the LAN
+
+
+* Switches connect up to 1024 computers in a LAN (most common max computers on a LAN is 30-40
+* Routers connect multiple LANs together in a WAN
+* Routers use logical addressing (IP) to determine local vs remote traffic
+CABLES AND CONNECTORS:
+
+
+* Wired connections are the backbone of how LAN and internet works
+* Ethernet is the most common networking method
+* DOCSIS (used for cable modems)
+* 10BaseT (10Mbps baseband twisted pair)
+* Coaxial cable:
+   * RG ratings 
+      * RG 58: older style BNC connector
+      * RG 59
+      * RG 6: f-type connector
+* Unshielded twisted pair (UTP)
+   * Common to run for 100m
+   * RJ 11: older style telephone cable connector with 4 contacts
+   * RJ 45: newer style ethernet connector with 8 contacts
+* Shielded twisted pair (STP)
+   * Uses RJ 45 connector
+* Fiber optic cable:
+   * Multimode (uses LED)
+   * Singlemode (uses lasers): super long range
+   * Has 2 connectors; send and receive
+
+
+* CAT (category) ratings
+   * CAT 5: 100 Mbps
+   * CAT 5e: 1 Gbps
+   * CAT 6: 1 Gbps up to 100m; also supports 10 Gbps up to 55m
+   * CAT 6a: 10 Gbps at 100 m segments
+* Plenum ratings (ability to resist heating/burning):
+   * PVC (non-plenum)
+* Riser ratings:
+   * Between floors, not as resistant as plenum
+
+
+* Coaxial cables use RG ratings and F-type connectors
+* Most networks use twisted pair cabling
+* Fiber optic cables use light, rather than electrical pulses
+* Twisted pair cabling have different category (CAT) ratings
+
+
+
+
+CRIMPING CABLES:
+* Cables and crimps have to have matching CAT ratings
+* Untwist the cables to be able to set them into the crimp
+* TIA 568A / TIA 568B:
+   * Both:
+      * 8 - brown
+      * 7 - brown white
+      * 5 - blue white
+      * 4 - blue
+   * A:
+      * 6 - orange
+      * 3 - orange white
+      * 2 - green
+      * 1 - green white
+   * B: 
+      * 6 - green
+      * 3 - green white
+      * 2 - orange
+      * 1 - orange white
+* Line up all the untwisted wires, cut to .5in to insert into RJ 45 crimp
+* Slide them in with the proper orientation (tab towards ground) then crimp with cable crimper
+* Test with a cable tester:
+   * Continuity
+   * Wire map
+* “Straight-through cable”; same standard on each end
+* Crossover cable 568A at one end 568B at the other end
+   * Plug two computers directly together with no cable
+
+
+* Use a crimping tool to attach UTP cable to crimp (ex: RJ 45)
+* Two standards: t568A t568B
+* Straight-through cable has the same standard on each end
+* Crossover cable has different standards on each end
+
+
+STRUCTURED CABLING:
+
+
+* Install cabling behind walls, floor, ceiling etc to maintain neat cabling that is easily accessible and non-hazardous
+* Exists / originates in the MDF (main distribution frame)
+   * 19in equipment rack very common in these rooms
+      * Standardized heights known as “u”
+      * Horizontal run:
+         * Runs from the rack to the wall and connects to individual systems via a network cable RJ 45 style
+         * Run the patch cable (RJ 45 connectors) from the patch panel to the switch box
+            * uses RJ 45 connector patch cable from the patch panel to the switch box
+         * Only effective within 90m (up to 10m of patch cable)
+         * CONNECTING TO THE PATCH PANEL:
+            * 110 punchdown tool
+               * Follow diagram per panel to route wires from the network cable
+      * Fox and hound (tone generator and tone probe):
+         * Tracks down and locates cables
+      * Time domain reflectometer (TDR)
+         * Finds length of a cable
+   * Solid Core cable runs through the walls
+      * Each wire inside cable is a solid piece of copper
+   * Stranded cabling for patch cables
+      * Each of the 8 wires inside the cable is stranded copper
+      * Very flexible
+* Horizontal runs from wall outlet to patch panel through walls/ceilings
+* Use punch-down tool to connect cable to patch panel
+* Use tone generator/tone probe to locate cables
+* Use TDR for testing runs; i.e find out to which jack the cable needs to connect to

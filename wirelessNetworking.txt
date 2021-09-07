@@ -1,0 +1,55 @@
+﻿Wireless Network Hardware:
+
+
+* IEEE 802.11 Standard for wireless networks:
+   * Primary method for wireless communication
+   * Common among all 802.11 setups:
+      * Wireless access point (WAP)
+      * Acts as bridge between ethernet network and wireless networks
+      * Usually has only 1 connection (routers have multiple functions/connections)
+   * Infrastructure mode:
+      * 1 or more WAPs
+      * Wireless network card
+      * Laptops usually have wireless network antenna built into the monitor
+      * Service set identifier (SSID)
+         * Serve as names / identifiers of wireless networks
+   * Adhoc mode:
+      * Use a machine / pc that acts as a wireless access point for other computers to connect to (but there is no WAP involved);
+         * Does not necessarily involve providing internet access
+   * Antennas:
+      * Omni-directional; spreads in all directions
+      * Dipole: 
+         * 2 omni-directional antennas that are pointed directly opposite of eachother
+         * Big flat circular signal very useful for WAP
+      * Patch:
+         * Flat looking; good for placing on wall and outward from wall
+      * Highly directional:
+         * Yagi; long distance signal throws in shape of football
+         * Parabolic antenna
+* A wireless access point (WAP) bridges 802.11 and ethernet networks
+* Wireless clients connect to WAP
+* 802.11 works in one of two modes: infrastructure mode or ad hoc mode
+* Use correct antenna from list above for the correct application of signal propagation 
+
+
+WIFI STANDARDS
+* Extensions to standard 802.11 to support newer tech and better speed
+* Based on Industrial, Scientific, and Medical (ISM) radios bands
+   * 2.4 GHz band
+   * 5 GHz band
+   * Band: range of radio frequencies
+      * 2.412-2.4884
+      * channels : 14 different channels that takes a different piece of each band
+      * JPN has 14, EU  has 13, USA has 11
+      * 5.150 - 5.875
+         * 36-64 segmented
+         * 100-144 segmented
+         * 149-165 segmented
+   * Extensions to 802.11
+      * 802.11a 54Mbps 5GHz
+      * 802.11b 11Mbps 2.4GHz
+      * 802.11g 54Mbps 2.4GHz
+      * 802.11n 100Mbps 2.4GHz and 5GHz
+         * MIMO multiple in / multiple out
+         * Backwards compatible with all other extensions
+      *

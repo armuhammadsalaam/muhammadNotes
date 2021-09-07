@@ -1,0 +1,445 @@
+﻿LOCAL AREA NETWORKING:
+
+
+* TCP / IP:
+   * Ex: 10.11.12.13
+   * Identify LAN
+   * Identify HOST ID
+   * Class C: 210.11.12.x
+      * 254 hosts
+   * Class B: 172.16.x.x
+      * 65,534 hosts
+   * Class A: 6.x.x.x
+      * Millions of hosts
+* 4 characters go from 0-255
+* A dot between each of the numbers ( 3 dots total)
+   * Addresses do not end in 0 or 255
+* Use routers as gateway to internet
+   * Give an ip address
+   * Give it a subnet mask
+   * Give it a default gateway (router)
+
+
+* ARPANET formed as foundation of the internet
+* TCP/IP adopted as protocol for ARPANET/Internet
+* IP addresses have four octets between 0-255
+* Classful address scheme for locations and sublocations
+
+
+
+
+NETWORK IDs and SUBNET MASKS
+
+
+* “Network and Sharing Center”
+   * Change adapter settings
+      * Properties:
+         * Internet protocol version 4 (IPV4)
+         * Use custom addresses
+         * Use similar numbers for router
+   * Static IP address
+
+
+* Use Network and sharing center for setting up network information
+* Set IP address, subnet mask, and gateway in Ethernet Properties
+* Manual settings = static IP address
+* 255 in a subnet mask is part of the network address
+
+
+SPECIAL IP ADDRESSES:
+
+
+* Class D: multicast
+   * Popular in presentation software / presentation applications
+* Class E: Reserved
+   * Not common for civilian use
+
+
+* Private IP Address:
+   * Commonly used in private home networks:
+      * Class A: 10.x.x.x
+      * Class B: 172.16.x.x -> 172.31.x.x
+      * Class C: 192.168.x.x
+   * Only for private networks
+* Loopback IP Address:
+   * 127.0.0.1
+   * Refers to your own system
+   * Use ping command followed by loopback to ping your system
+      * Test the network card on your system
+   * Ipconfig (windows) ifconfig(linux/MacOS) will show all relevant network addresses on your system
+   * Ping your router to check if it is active on the network
+   * ipconfig/all -> shows more relevant network address info
+   * Ping -t address: keeps pinging indefinitely
+      * To test multiple switches/panels
+
+
+* Class D addresses for multicast (224.x.x.x)
+* Class E addresses reserved (240.x.x.x)
+* Three sets of private IP addresses (10, 172.16 - 172.31, 192.168.x.x)
+* Loopback addresses for self-reference (127.x.x.x)
+
+
+NAT:
+* Network Address Translation:
+   * Removes the private IP address from computer sending data
+   * Changes it to LAN public IP address
+
+
+* Network address translation (NAT) saves IP addresses
+* With NAT, internal networks use private IP addresses and share a public address with WAN
+* All gateway routers are NAT-enabled by default
+* Networks that use NAT are invisible to the public Internet
+
+
+
+
+DYNAMIC IP ADDRESSING:
+
+
+* Dynamic Host Configuration Protocol (DHCP):
+   * Many home routers also act as DHCP servers
+   * Automatically configures all IP addresses; even when using on another LAN
+   * DHCP server has its own IP address
+* Automatic private IP addressing (APIPA)
+   * Fallback in case the computer cannot find a DHCP server
+   * Always gives a 169.254.x.x (class B)
+   * Denotes a DHCP server problem; won’t be able to get on internet with APIPA alone
+   * Ipconfig /renew command re-initiates the DHCP server so you get useable IP addresses on your system
+   * Ipconfig /release command disconnects your system from the DHCP server
+   * Ipconfig /renew to connect your system to the DHCP server
+* Right-click on network icon at the bottom right in order to run built-in network troubleshooter; runs above commands on your system to get your system re-connected to the internet
+* You can configure your own private IP address without APIPA; recommended only for specific purposes; setting APIPA enabled is good default behavior to see if you are ever disconnected from DHCP server
+
+
+* Dynamic Host Configuration Protocol (DHCP) automatically assigns IP information to hosts
+* Gateway routers commonly are DHCP servers for their internal LANs
+* If a DHCP client can’t find the DHCP server, it will use an APIPA address
+* Use the ipconfig /renew command to force a new connection to the DHCP server
+
+
+IPv6:
+* Solution to having run out of IPv4 addresses; 4 billion
+* 8 groups of 4 characters separated by colons
+* Use shorthand by removing leading zeros and condensing 3 zeros in a row into a double colon ::
+* Link-local address:
+   * Fe80:0000:0000:0000:[last half is auto-generated]
+* Internet address: (global unicast address)
+   * Run ipconfig to list IPv6 address information
+   * Still have ipv4 addresses
+* Every system has 1 main IPv6 address but they can temporarily make different ones as needed for multiple processes
+* Recognize IPv4 vs IPv6 addresses
+* IPv6 prefix length fixed at /64
+   * Talk to upstream routers faster
+
+
+* IPv6 addresses use a 128-bit addressing scheme
+* IPv6 addresses use a hexadecimal notation
+* IPv4 addresses are 32 bits long
+* Link-local addresses are used for local connections
+* Global unicast addresses are used to connect to the internet
+
+
+
+
+PORT NUMBERS:
+
+
+* Client-server interactions (browser is a client that requests information from servers)
+   * Servers use Internet Information Service (IIS) to hold then send out information
+* Domain Name System (DNS): holds all web-page addresses
+* IP address gets you to the computer; Port number gets you to the correct application
+   * range : 0-65535
+   * Always have a source and destination port number
+   * Server will listen on a particular port for information requests from clients
+      * Servers use multiple ports to deal with multiple processes/ requests at once
+      * Ex: each tab on a browser will have its own port number
+   * Can use software like “resource manager” to keep track of network traffic/activity
+      * A single web page can use multiple port numbers depending on the needs of the website/page
+* Different categories of port numbers:
+   * 0-1023: Well-known ports
+      * Major web applications/services are most common 
+   * 1024-49151: Registered ports
+      * Popular/common web services with major traffic that have dedicated port numbers
+         * Ex: “Steam” has its own registered ports
+   * 49152-65535: Dynamic/Ephemeral
+      * Your system will use a dynamic port number to return your web-service requests (receiving end at your system)
+* List of common port numbers that will be on the Exam:
+   * 21-FTP
+   * 22-SSH
+   * 23-TELNET
+   * 25-SMTP
+   * 53-DNS
+   * 80-HTTP
+   * 110-POP3
+   * 161/162-SNMP
+   * 143-IMAP
+   * 443-HTTPS
+   * 3389-RDP
+   * 137-139-NETBIOS/BETBT
+   * 445-SMB/CIFS
+   * 427-SLP
+   * 548-AFP
+   * 67-68-DHCP
+   * 389-LDAP
+* IP addresses get you to the right computer, PORT NUMBERS get you to the right application
+
+
+* Port numbers get data to the correct application
+* There is always a source and destination port number
+* Resource monitor shows the connections on a system
+* Memorize all ports numbers listed on the exam
+
+
+
+
+
+
+
+
+TCP UDP ICMP:
+
+
+* Protocol: standardized processes for job completion
+* Internet operates using transmission control protocol / internet protocol (TCIP/IP)
+   * 2 protocols work together to handle information traffic to your system
+* TCP: connection-oriented protocol
+   * client - server process with handshake
+* UDP: non-connection protocol
+   * No handshake required
+* ICMP: single-packet only
+   * Simple, small processes
+   * Ex: ping command uses ICMP protocol
+* Protocol data unit (PDU):
+   * Breaks down the ethernet frame to use only the chunks that are needed for the server request
+   * Server requests focus on the IP packet
+   * Data section of IP packet is the content of interest; what the server request is made to retrieve:
+      * Known as the TCP segment / UDP datagram
+
+
+* Transmission control protocol (TCP) is connection-oriented and sends multiple packets
+* User datagram protocol (UDP) is connectionless, but also sends multiple packets
+* Internet control message protocol ICMP is connectionless and always sends a single packet
+* We organize packets by protocol data units (PDUs)
+
+
+
+
+Understanding DNS:
+
+
+* Domain name system (DNS);
+   * Resolves web address names to corresponding IP address
+   * Replaced host file system in the mid90s
+   * Exists on a network of powerful  DNS servers: root servers
+      * First level domains: .com .edu .gov
+      * Second level domains: totalsem.com google.com DNS server
+      * When first visiting a webpage, the DNS process takes a moment longer than usual because it has not been cached on your system yet
+* Fully Qualified Domain Name (FQDN):
+   * Register a unique name
+   * Usually involves paying a domain name server service provider
+   * 256 character limit for the name
+   * Domain Name System (DNS) resolves fully-qualified domain names (FQDN)
+   * DNS replaced hosts files
+   * DNS uses a hierarchical organization to resolve FQDNs to IP addresses
+   * All internet-connected hosts have a DNS server
+
+
+Working with DNS:
+
+
+* Provided by DHCP server:
+   * Ipconfig /all
+* To statically configure DNS:
+   * Network and sharing center; change adapter setting
+      * Ethernet properties
+      * IPV4 properties
+      * Set DNS server address automatically or set statically by typing in the address
+* DNS connections go in an out:
+   * Manually configure each time
+   * Put in 2 DNS servers:
+      * 8.8.8.8 or 8.8.4.4
+      * Popular public DNS servers (provided by Google)
+* NS lookup:
+   * Nslookup command outputs DNS IP address
+      * Runs interactive mode, type in an address to see the public information for that address from the DNS server
+      * Can change active server when an interactive mode 
+      * If you get a time out from the console, the IP address being used is not a functional DNS server
+      * In the event of time-outs when using the nslookup command, change servers or call network administrator/DNS service provider to resolve the issue
+* * Use ipconfig /all command to see a system’s DNS servers
+* You can statically configure DNS and still use DHCP for IP addressing
+* Have an alternative public DNS server in case your DNS server is down
+* Use nslookup to verify a DNS server is running
+
+
+
+
+WINDOWS NAMING:
+
+
+* Netbios/NetBT
+   * Workgroup vs active domain
+   * Control panel: system
+   * Go to settings to change computer name / workgroup or domain name using the change settings dialogue box
+   * Using a workgroup is useful for small LANs
+   * Use servers to establish a domain:
+      * “Windows server system”
+         * Active directory domain
+         * Security, central administration
+         * Powerful
+         * Expensive
+   * Homegroup:
+      * In between work group and active directory domain
+      * No longer used
+* Windows systems are members of network organizations
+   * Workgroups:
+      * Very basic; no security, no administration, 
+   * Active directory domains:
+      * Install windows server software
+      * Establish domain
+   * Homegroup:
+      * No longer used
+      * More automation / administration than workgroup
+
+
+* Windows naming is designed for LANs
+* When you install windows, you give the computer a windows name
+* All windows systems will be a member of a domain or a workgroup
+* Homegroups are a more secure and automated organization, but still a workgroup
+
+
+ROUTERS:
+
+
+* Routers are devices that filter and forward network traffic based on IP addresses
+   * Used to connect LANs
+   * Routing table used to direct incoming traffic
+   * Use a default gateway to send out traffic if the network ID is not specified
+   * Looks at destination address and sends out the traffic through another port
+   * Main internet traffic pathway
+* Home routers usually have switches and wireless access points into one box
+* DOCSIS; some routers have upstream connections using cable modems
+* Configuring routers:
+   * Console port: serial port RJ45 to DB-9 connector that goes to the computer to communicate with the router; “Yost” “Rollover cable”
+   * Use terminal software like PuTTy to configure the router
+* SOHO (small office / home office) router:
+   * DHCP range
+   * Change the default username and password
+* Connecting to router:
+   * The default gateway is your router
+   * Use a web browser to connect to the router IP address and access configuration settings
+
+
+* Routers filter and forward traffic based on IP addresses
+* A routing table determines where to filter or forward IP packets
+* Every routing table has a default gateway that sends all data unless otherwise specified
+* A SOHO router is usually far more than a router; switch, wireless access point, etc
+* Some routers use web connections, some use console ports
+
+
+BASIC ROUTER CONFIGURATION:
+
+
+* Check the status screen for overall information
+* WAN Most routers are DHCP clients (dynamic IP addressing)
+* LAN; can change internal network ID
+   * Routers will automatically change all addressing information for the system
+* Advanced settings: system tools
+   * Dhcp server; what addresses for router to pass out
+   * Router usually takes DNS server default addresses to distribute to clients
+* DHCP reservation:
+   * Range of addresses to distribute to clients
+   * To not pass out specific addresses; not common to do so.
+   * Not necessary to set reservations; use .1 for the router address, use single digits addresses for devices you want to give fixed addresses to (file server, cameras, etc.)
+* System tools:
+   * Time settings NTP servers
+   * Diagnostics
+   * Firmware updates
+   * Administration
+      * New usernames and passwords
+   * Local management:
+      * Settings to deter unwanted connections to the LAN router
+   * Enable remote management (WAN) (off by default)
+      * Change web management port
+      * Use address to get to router configuration screen
+      * Not smart to enable remote management; safer to physically connect to the router to change configurations
+
+
+* Configure both the WAN and LAN connections on your router
+* Avoid default settings for basic configurations (IP, SSID, password, etc.)
+* Don’t create too large of an DHCP pool
+* DHCP reservations set aside IP addresses in the DHCP pool
+
+
+
+
+ADVANCED ROUTER CONFIGURATION:
+
+
+* Quality of service:
+   * Limited bandwidth; allows you to meter bandwidth to different types of traffic
+   * QoS:
+      * Select port
+      * Select uplink and download speed
+      * Set priorities by PORT number, IP address or MAC address; premium is higher than the rest
+* Universal Plug and Play (UPnP):
+   * Makes router easily visible to networks
+* Link Layer Discovery Protocol:
+   * On windows by default
+* Simple Network Management Protocol (SNMP):
+   * Used by network administrators for critical network information
+   * Very powerful tool
+
+
+* Quality of Service (QoS) gives control on network bandwidth by many different criteria
+* Link layer discovery protocol (LLDP) and Universal Plug and Play (UPnP) help with network device identification
+* Simple network management protocol enables querying of network devices
+
+
+
+
+VLANs:
+* Virtual local area network:
+   * Takes one physical switch and virtually creates two or more switches
+   * Separate network traffic on the same box
+   * Managed switch:
+      * Switches use MAC addresses; give the switch an IP address to manage and configure the switch
+      * Use DHCP from the router to find the switch IP address, then access the switch via a web browser
+      * Might be useful to use MS Internet Explorer to configure switches
+      * Setup VLAN:
+         * Define the VLANs (most switches have 2 by default)
+         * Assign the network traffic per VLAN
+         * Select the ports for the traffic you want to direct to different VLAN
+      * Port security settings:
+         * Declare which computers and ports can access the switch
+         * Undeclared systems will not work with the switch
+
+
+* VLANs enable network segmentation without adding hardware
+* Configure VLAN-capable switches via IP address and Web browser
+
+
+NETWORK TROUBLESHOOTING (FOR WIRED NETWORKS):
+
+
+* No connectivity:
+   * Check all physical connectors and cables
+   * Check network / IP addressing for IP conflicts (static addresses might conflict)
+      * Look for IP conflict error messages
+   * Use ping command
+* Limited connectivity: check DHCP status;
+   * If there is a 169.254 IP address there is a problem with the DHCP server
+   * If your IP address changes from one session to the next, check for ROGUE DHCP server
+* Intermittent Connectivity:
+   * Check for any problems with connectors, cables, and interference; replace or move cable to resolve
+* Unavailable Resources:
+   * Ping the system 
+   * Check for problems with the shared resource (common issue accessing folders)
+
+
+
+
+* Slow transfer speeds:
+   * Common issue in wireless networks but can show up in wired connections
+   * Check task manager and see loads/processes on the network card
+   * Remove load on network card / end intensive processes if they are not needed at the moment (such as updating games in the background)
+*
