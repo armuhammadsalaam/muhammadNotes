@@ -1,0 +1,27 @@
+INTERNET TIERS:
+
+	- Tier 1:
+		- 10 companies that provide internet to large clients
+		- coverage among all companies to establish full coverage
+		- "Peering Agreements":
+			- competitors agree to share traffic to increase internet coverage
+			- NOC: Network Operation Centers
+				- companies add routers to connect internet
+		- do not pay anybody for internet
+	- Tier 2: 
+		- no peering agreement with tier 1 provides
+		- some peering with others
+		- pays tier 1 for internet
+	- Tier 3:
+		- big internet service providers
+		- selling internet services to individuals and corporations
+		- no peering agreements
+		- paying for their internet
+	- Individual clients:
+		- pay for all internet services
+
+RECAP:
+	- The internet is composed of many organizations that connect to eachother
+	- Tier 1 are providers that do not pay anyone (peering)
+	- Tier 2 are providers that pay some Tier 1s but also peer with Tier 1 and Tier 2s
+	- Tier 3 providers pay Tier 1 or Tier 2 providers

@@ -1,0 +1,42 @@
+BROADBAND CONNECTIONS:
+
+	- typical way to connect to the internet
+	- always connected / always on
+	- DSL; digital subscriber line
+		- digital signal on top of telephone line
+		- use a dsl modem; dsl terminal adapter
+		- asymmetric DSL (ADSL);
+			- upload speed much slower than download speed
+		- symmetric DSL
+			- upload speed equal to download speed
+		- among DSL connection speeds:
+			- upload speeds: 768kbps to 3Mbps
+			- download speeds: 1.5Mbps to 7+Mbps
+		- within a DSL router:
+			- go to network internet settings
+			- internet connection type:
+				- PPPoE; point to point protocol over ethernet
+				- input username and password from ISP
+		- cable box internet:
+			- Data Over Cable Service Interface Specification (DOCSIS)
+				- watch tv and use internet at the same time
+				- older connection speeds: up1.5Mbps/down10Mbps
+				- modern connection speeds: up50Mbps/down100Mbps or better
+			- to setup cable box connection:
+				- navigate to MAC Clone settings
+				- select MAC address setting
+				- many clients buy their own cable boxes instead of leasing from cable service company
+				- clone original cable box MAC address and input into new cable box being used
+		- Satellite internet connection:
+			- internet access for remote user locations
+			- speeds up3Mbps/down25Mbps or better
+			- uses modem
+			- has latency due to nature of connection
+		- 802.11 setups as internet service provider
+			- wireless antennae to blast wifi signal for clients
+RECAP:
+	- Broadband are high speed, always on connections
+	- digital subscriber line DSL runs on top of telephone service
+	- data over cable service interface specification DOCSIS uses cable connections
+	- satellites are handy for more remote locations
+	- many metro areas provide native ethernet for an ISP

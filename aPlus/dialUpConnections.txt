@@ -1,0 +1,37 @@
+DIALUP CONNECTIONS:
+
+	- also known as Plain Old Telephone Service (POTS)
+	- PSTN Public Switched Telephone Network
+	- land lines
+	- every OS still supports dialup
+	- uses RJ11; regular phone jack connector
+	- modem:
+		- jack for the wall; 
+		- jack for your phone
+		- db25 serial connection goes to db29 in back of computer
+		- all connections made result in a comport for your system
+			- allows windows to recognize different serial ports
+	- modems have a unique phone number that they use for internet connection
+	- to set up dialup connection on windows 10:
+		- go to network settings
+		- go to dialup menu
+		- set up new connection
+		- connect to the internet
+		- set up new connection anyway (if already connected to the internet
+		- set up connection anyway (if you a modem is not detected or present)
+		- create dial up phone number
+		- input username and password from internet service provider (ISP)
+		- create connection name
+		- dialup connection appears on network access panel
+		- dialup speed is 56kbps MAX
+		- very slow
+	- ISDN (integrated services digital)
+		- uses terminal adapters not modems
+		- completely digital line
+		- 64kbps or 128kbps
+
+RECAP:
+	- Dial-up also goes by the name plain old telephone service (POTS)
+	- Dial-up plugs RJ-11 connectors to the phone system
+	- Modems convert analog POTS to digital COM port connections
+	- Modems connect to other modems using a phone number

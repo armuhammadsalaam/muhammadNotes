@@ -1,0 +1,16 @@
+BEYOND THE LAN:
+
+	- LAN: group of computers all connected to one switch
+		- all computers share the same network ID
+		- can connect multiple LANs using routers to create a WAN (wide area network)
+		- each LAN has unique network ID
+		- MAN (metropolitan area network) group of WAN within a particular municipality
+		- PAN (personal area network) limited to bluetooth devices; direct point to point connection between 2 bluetooth devices
+	- THE INTERNET:
+		- largest WAN; connects all of the computers on the planet
+
+RECAP: 
+	- Local area network (LAN) computers share teh same network ID
+	- A wide area network (WAN) is two or more LANs interconnected by one or more routers
+	- A metropolitan Area Network (MAN) is a WAN that spans a city
+	- A personal area network (PAN) is a point-to-point connection used only in bluetooth connections
