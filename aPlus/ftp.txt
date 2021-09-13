@@ -1,0 +1,28 @@
+File Transfer Protocol:
+
+	- before download links: FTP
+	- uses port 21
+	- need FTP client
+		- every web browser is an ftp client
+		- FileZilla
+		- works like cloud storage
+		- ftp server:
+			- type in ip address or domain
+			- type in port 21 or other number
+			- click connect
+			- allows file transfer from client to remote ftp server
+			- click and drag over using FileZilla
+			- can make folders etc
+			- passive mode: everything is done on port 21
+				- ftp request goes out on port 21
+				- server sends it back 
+			- active mode: 
+				- client sends ftp request on port 21
+				- server sends back on port 20
+				- most routers will block this
+				- 5x faster than passive mode
+				- home routers will block incoming port 20 because client did not initiate port 20 communication
+				- port triggering:
+				- 
+
+

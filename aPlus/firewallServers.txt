@@ -1,0 +1,24 @@
+Firewalls and Servers:
+
+	- web is not the only part of the internet
+	- client computer goes to cloud (internet)
+	- server also connected to the internet
+	- to open a webpage on a server
+		- client computer tries to open webpage hosted on a server
+		- the host based firewall will:
+			- any outbound port 80 webpages 
+			- router has to allow outgoing port 80
+			- router blocks incoming port 80
+			- firewall allows outgoing port 80, blocks incoming port 80
+			- server listens to incoming port 80
+			- sents it back with a source port number so the firewall does not block it
+			- server has to be left open for incoming port 80
+		- home routers block incoming port 80 because clients usually do not have any web servers.
+
+RECAP: 
+	- all internet connections require a client and a server
+	- one of the primary functions of firewalls is to block ports
+	- client and server networks use firewalls
+	- firewalls block ports on an incoming vs outgoing concept
+	- servers must not block incoming ports on the ports to which they listen
+
