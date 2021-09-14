@@ -1,0 +1,29 @@
+Email
+
+	- web based emails most popular
+	- client based emails exist
+		- Simple Mail Transfer Protocol (SMTP) - Port 25
+		- Pos Office Protocol (POP) - Port 110
+		- Internet Message Access Protocol (IMAP) - Port 143
+			- smtp send mail; configure smtp server
+			- use pop3 or imap; bring email down to client
+			- pop3 simple
+			- imap stores all folders and organizations; present across systems
+			- pop3 and imap4 latest versions
+			- always use same port numbers no matter what
+	- set up email:
+		- settings; scroll to accounts
+		- add an account; select other
+		- add a mail account
+		- follow through setup information
+		- set up incoming mail server smtp
+		- set up outgoing mail server pop3 or imap4 
+	- most mail today is secured mail; almost never smtp on port 25
+		- secure port 587 versions of pop and imap
+
+RECAP: 
+	- Email uses Simple Mail Transfer Protocol (SMTP) to send e-mail from a client to an e-mail server
+	- Use Post Office Protocol v3 (POP3) or Internet Message Access Protocol (IMAP) to pull e-mail down from e-mail server
+	- SMTP uses TCP port 25; POP3 uses TCP port 110; IMAP uses port 143
+	- Setting up an email account requires knowledge of the IP address or DNS name for the different servers
+
