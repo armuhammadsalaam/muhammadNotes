@@ -1,0 +1,24 @@
+PROXY SERVERS:
+
+  - whenever you send anything through the web, goes through proxy server then out throught the router
+    - filters traffic to block certain traffic / data
+    - filters incoming data / traffic as well
+    - common in schools / work environments
+    - application specific
+    - to access proxy:
+      - internet options (windows 10)
+      - connections, LAN settings
+        - proxy server:
+          - use proxy, give IP address
+            - set port number, proxy address
+            - set exceptions to the proxy
+    - benefits:
+      - caching
+      - paid service
+      - can use firewall
+      
+RECAP:
+  - A proxy server acts as a go-between (a proxy) between a client and a server
+  - Proxy servers are application-specific (e.g., a Web proxy for HTTP and HTTPS)
+  - Proxy servers provide firewalling, check for malware, ban bad URLs
+  - Applications must know the address of the proxy server
