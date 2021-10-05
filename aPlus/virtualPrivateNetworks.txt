@@ -1,0 +1,26 @@
+VPNs:
+  - take the internet and turn into a virtual private network
+  -- set up:
+  --- install VPN client
+  --- connect vpn client ip address to home WAN IP address
+  --- creates a pipe between client and WAN (vpn tunnel)
+  --- need a router as vpn endpoint
+  ---- vpn clients:
+  ----- pptp, L2TP, IPsec
+  ----- built in windows client:
+  ------ network connections, VPN
+  ------ name the connection
+  ------ server name or address
+  ------ vpn type automatic
+  ------ type of sign in
+  ------ username and password
+  ------ save (manifests as new network card)
+  
+  ------ windows will show 2 network cards; double click to start vpn connection
+  ------ problem: split tunneling
+  
+  
+  RECAP: 
+  --- Virtual Private Networks (VPNs) use the Internet to create a private connection to a remote network
+  --- We need a VPN client program that connects to a VPN server at the remote network
+  --- The VPN client needs to kow the IP address of the VPN server to make the connection
